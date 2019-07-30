@@ -2,8 +2,8 @@ version: '3.7'
 
 services:
 
-  sample:
-    container_name: sample
+  zapify:
+    container_name: zapify
     build:
       context: .
       dockerfile: Dockerfile
