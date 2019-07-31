@@ -1,11 +1,11 @@
-.Box-primary{
-    width: 300px;
+.Box-primary {
+  width: 300px;
   border: 15px solid green;
   padding: 50px;
   margin: 20px;
 }
 
-.Box-secondary{
+.Box-secondary {
   width: 300px;
   border: 15px solid red;
   /* background-color: yellow;
