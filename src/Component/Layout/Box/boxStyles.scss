@@ -1,0 +1,16 @@
+@import "../../../Styles/globals.scss";
+
+.boxPrimary {
+    background-color: $primaryColor;
+    color: $defaultb;
+}
+
+.boxSecondary {
+    background-color: $secondaryColor;
+    color: $defaultb;
+}
+
+.boxTertiary {
+    background-color: $tertiaryColor;
+    color: $defaultb;
+}
