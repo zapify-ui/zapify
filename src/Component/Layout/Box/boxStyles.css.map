@@ -1,0 +1,10 @@
+{
+    "version": 3,
+    "mappings": "AAEA,AAAA,WAAW,CAAC;EACR,gBAAgB,ECHL,OAAO;EDIlB,KAAK,ECAE,OAAO;CDCjB;;AAED,AAAA,aAAa,CAAC;EACV,gBAAgB,ECPH,OAAO;EDQpB,KAAK,ECLE,OAAO;CDMjB;;AAED,AAAA,YAAY,CAAC;EACT,gBAAgB,ECXJ,OAAO;EDYnB,KAAK,ECVE,OAAO;CDWjB",
+    "sources": [
+        "boxStyles.scss",
+        "../../../Styles/globals.scss"
+    ],
+    "names": [],
+    "file": "boxStyles.css"
+}
