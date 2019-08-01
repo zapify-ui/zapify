@@ -2,7 +2,6 @@ import React, { Component } from "react";
 import Proptypes from "prop-types";
 import "./styles.scss";
 
-
 export default class Button extends Component {
   render() {
     return (

@@ -2,8 +2,39 @@
 
 .primaryButton {
   background-color: $primaryColor;
+  padding: 6px 8px;
+  margin: 10px 8px;
+  font-size: 18px;
+  text-align: center;
+  cursor: pointer;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 3px #999;
 }
 
 .secondaryButton {
   background-color: $secondaryColor;
+  padding: 6px 8px;
+  margin: 10px 8px;
+  font-size: 18px;
+  text-align: center;
+  cursor: pointer;
+  color: $grey;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 3px $grey;
+}
+
+.tertiaryButton {
+  background-color: $tertiaryColor;
+  padding: 6px 8px;
+  margin: 10px 8px;
+  font-size: 18px;
+  text-align: center;
+  cursor: pointer;
+  color: $defaultb;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 3px $grey;
 }
