@@ -1,13 +1,15 @@
-/* .Box-primary {
-  width: 300px;
-  border: 50px solid  #eb8f9e;
-  padding: 50px;
-  margin: 20px;
+.boxPrimary {
+  background-color: #eb8f9e;
+  color: #000000;
 }
 
-.Box-secondary {
-  width: 300px;
-  border: 15px solid red;
-  padding: 50px;
-  margin: 20px;
-} */
+.boxSecondary {
+  background-color: #80ff80;
+  color: #000000;
+}
+
+.boxTertiary {
+  background-color: #ffd280;
+  color: #000000;
+}
+/*# sourceMappingURL=boxStyles.css.map */
