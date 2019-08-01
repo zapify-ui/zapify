@@ -19,8 +19,9 @@
   white-space: normal;
   overflow: hidden;
   padding: 0 1em;
-  cursor: pointer;
   user-select: none;
+  cursor: pointer;
+
   text-align: center;
   text-decoration: none;
   text-transform: uppercase;
@@ -30,6 +31,7 @@
     content: "";
     position: absolute;
     top: 0;
+    cursor: pointer;
     right: 0;
     bottom: 0;
     left: 0;
@@ -44,6 +46,7 @@
     content: "";
     position: absolute;
     left: 50%;
+    cursor: pointer;
     top: 50%;
     background: lighten($grey, 15%);
     z-index: -1;
@@ -108,6 +111,7 @@
     bottom: 0;
     left: 0;
     z-index: -1;
+    cursor: pointer;
     //background: linear-gradient( 180deg, darken(#39CCCC,5%), darken(#39CCCC,5%) 50%, #39CCCC 50%, #39CCCC );
     //background-size: 100% 200% ;
     //background-position: 0 100%;
@@ -120,6 +124,7 @@
     top: 50%;
     background: lighten($grey, 15%);
     z-index: -1;
+    cursor: pointer;
     width: 100%;
     padding-top: 120%;
     border-radius: 100%;
@@ -181,6 +186,7 @@
     left: 0;
     z-index: -1;
     background-color: $tertiaryColor;
+    cursor: pointer;
 
     //background: linear-gradient( 180deg, darken(#39CCCC,5%), darken(#39CCCC,5%) 50%, #39CCCC 50%, #39CCCC );
     //background-size: 100% 200% ;
