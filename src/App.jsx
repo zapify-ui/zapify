@@ -15,7 +15,8 @@ function App() {
       <Button color="primaryButton" />
       <Button color="secondaryButton" />
       <Container type="fluid" maxWidth="sm"/>
-      <Container type="fluid" maxWidth="sm"/>
+      <Container type="fluid" maxWidth="md"/>
+      <Container type="fluid" maxWidth="xl"/>
       <Container type="fixed"/>
       </div>
     </div>
