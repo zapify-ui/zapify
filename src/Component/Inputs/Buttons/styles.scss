@@ -1,40 +1,221 @@
 @import "../../../Styles/globals.scss";
 
 .primaryButton {
-  background-color: $primaryColor;
-  padding: 6px 8px;
-  margin: 10px 8px;
-  font-size: 18px;
-  text-align: center;
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  padding: 0 0.6em;
+  height: 2.4em;
+  border-radius: 5px;
+  line-height: 2.4;
+  overflow: hidden;
+  color: $defaultw;
+  font-weight: bold;
+  font-size: 2em;
+  margin: 10px 10px 10px 10px;
+  letter-spacing: 0.01em;
+  max-width: 100%;
+  text-overflow: ellipsis;
+  white-space: normal;
+  overflow: hidden;
+  padding: 0 1em;
   cursor: pointer;
-  color: #fff;
-  border: none;
-  border-radius: 10px;
-  box-shadow: 0 3px #999;
+  user-select: none;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-tap-highlight-color: transparent;
+  &:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+    background-color: $primaryColor;
+    //background: linear-gradient( 180deg, darken(#39CCCC,5%), darken(#39CCCC,5%) 50%, #39CCCC 50%, #39CCCC );
+    //background-size: 100% 200% ;
+    //background-position: 0 100%;
+    transition: background-color 400ms;
+  }
+  &:after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    background: lighten($grey, 15%);
+    z-index: -1;
+    width: 100%;
+    padding-top: 120%;
+    border-radius: 100%;
+    opacity: 0;
+    transform: translateX(-50%) translateY(-50%) scale(0.2);
+    transition: opacity 500ms, transform 500ms;
+    transition-delay: 0, 100ms;
+  }
+  &:hover {
+    .no-touch & {
+      &:before {
+        background-color: darken(#39cccc, 5%);
+      }
+    }
+  }
+  &:active {
+    color: #fff;
+    &:after {
+      transform: translateX(-50%) translateY(-50%) scale(1.1);
+      transition: opacity 100ms, transform 100ms;
+      transition-delay: 0s;
+      opacity: 1;
+    }
+  }
 }
 
 .secondaryButton {
-  background-color: $secondaryColor;
-  padding: 6px 8px;
-  margin: 10px 8px;
-  font-size: 18px;
-  text-align: center;
-  cursor: pointer;
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  padding: 0 0.6em;
+  height: 2.4em;
+  border-radius: 5px;
+  line-height: 2.4;
+  overflow: hidden;
   color: $grey;
-  border: none;
-  border-radius: 10px;
-  box-shadow: 0 3px $grey;
+  font-weight: bold;
+  font-size: 2em;
+  margin: 10px 10px 10px 10px;
+  letter-spacing: 0.01em;
+  max-width: 100%;
+  text-overflow: ellipsis;
+  white-space: normal;
+  overflow: hidden;
+  padding: 0 1em;
+  cursor: pointer;
+  user-select: none;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-tap-highlight-color: transparent;
+  &:before {
+    content: "";
+    position: absolute;
+    background-color: $secondaryColor;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+    //background: linear-gradient( 180deg, darken(#39CCCC,5%), darken(#39CCCC,5%) 50%, #39CCCC 50%, #39CCCC );
+    //background-size: 100% 200% ;
+    //background-position: 0 100%;
+    transition: background-color 400ms;
+  }
+  &:after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    background: lighten($grey, 15%);
+    z-index: -1;
+    width: 100%;
+    padding-top: 120%;
+    border-radius: 100%;
+    opacity: 0;
+    transform: translateX(-50%) translateY(-50%) scale(0.2);
+    transition: opacity 500ms, transform 500ms;
+    transition-delay: 0, 100ms;
+  }
+  &:hover {
+    .no-touch & {
+      &:before {
+        background-color: darken(#39cccc, 5%);
+      }
+    }
+  }
+  &:active {
+    color: #fff;
+    &:after {
+      transform: translateX(-50%) translateY(-50%) scale(1.1);
+      transition: opacity 100ms, transform 100ms;
+      transition-delay: 0s;
+      opacity: 1;
+    }
+  }
 }
 
 .tertiaryButton {
-  background-color: $tertiaryColor;
-  padding: 6px 8px;
-  margin: 10px 8px;
-  font-size: 18px;
-  text-align: center;
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  padding: 0 0.6em;
+  height: 2.4em;
+  border-radius: 5px;
+  line-height: 2.4;
+  overflow: hidden;
+  color: $defaultw;
+  font-weight: bold;
+  font-size: 2em;
+  margin: 10px 10px 10px 10px;
+  letter-spacing: 0.01em;
+  max-width: 100%;
+  text-overflow: ellipsis;
+  white-space: normal;
+  overflow: hidden;
+  padding: 0 1em;
   cursor: pointer;
-  color: $defaultb;
-  border: none;
-  border-radius: 10px;
-  box-shadow: 0 3px $grey;
+  user-select: none;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-tap-highlight-color: transparent;
+  &:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+    background-color: $tertiaryColor;
+
+    //background: linear-gradient( 180deg, darken(#39CCCC,5%), darken(#39CCCC,5%) 50%, #39CCCC 50%, #39CCCC );
+    //background-size: 100% 200% ;
+    //background-position: 0 100%;
+    transition: background-color 400ms;
+  }
+  &:after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    background: lighten($grey, 15%);
+    z-index: -1;
+    width: 100%;
+    padding-top: 120%;
+    border-radius: 100%;
+    opacity: 0;
+    transform: translateX(-50%) translateY(-50%) scale(0.2);
+    transition: opacity 500ms, transform 500ms;
+    transition-delay: 0, 100ms;
+  }
+  &:hover {
+    .no-touch & {
+      &:before {
+        background-color: darken(#39cccc, 5%);
+      }
+    }
+  }
+  &:active {
+    color: #fff;
+    &:after {
+      transform: translateX(-50%) translateY(-50%) scale(1.1);
+      transition: opacity 100ms, transform 100ms;
+      transition-delay: 0s;
+      opacity: 1;
+    }
+  }
 }
