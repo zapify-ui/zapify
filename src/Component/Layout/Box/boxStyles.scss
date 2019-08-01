@@ -14,3 +14,23 @@
     background-color: $tertiaryColor;
     color: $defaultb;
 }
+
+.darkPrimary {
+    background-color: $primaryDark;
+    color: $defaultw;
+}
+
+.darkSecondary {
+    background-color: $secondaryDark;
+    color: $defaultw;
+}
+
+.darkTertiary {
+    background-color: $tertiaryDark;
+    color: $defaultw;
+}
+
+.disabled {
+    background-color: $disabled;
+    color: $defaultw;
+}
