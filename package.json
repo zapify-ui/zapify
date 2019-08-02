@@ -3,7 +3,6 @@
   "version": "0.1.0",
   "private": true,
   "author": "piyush97 <me@piyushmehta.com>",
-  "homepage": "https://zapify-ui.github.io/zapify/",
   "main": "index.js",
   "dependencies": {
     "node-sass": "^4.12.0",
