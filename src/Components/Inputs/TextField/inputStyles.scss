@@ -1,0 +1,23 @@
+@import "../../../Styles/globals.scss";
+
+.input {
+  width: 95%;
+  height: 35px;
+  padding-left: 15px;
+  border: none;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  background: $textFieldBg;
+}
+label {
+  font-weight: 100;
+  text-align: left;
+  margin-left: 13px;
+  font-family: $zapFont;
+  text-transform: uppercase;
+  font-size: 13px;
+  padding-left: 15px;
+  padding-bottom: 2px;
+  color: $defaultw;
+  display: block;
+}
