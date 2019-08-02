@@ -20,8 +20,8 @@ function App() {
         <Box color="darkSecondary" p={2} m={2.5} />
         <Box color="darkTertiary" p={2} m={2.5} />
         <Box color="disabled" p={2} m={2.5} />
-        <Button color="primaryButton" />
-        <Button color="secondaryButton" />
+        <Button color="primaryButton">Primary Button</Button>
+        <Button color="secondaryButton">Secondary Button</Button>
 
         <Container type="fluid" maxWidth="sm" />
         <Container type="fluid" maxWidth="md" />

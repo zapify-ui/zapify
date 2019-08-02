@@ -6,7 +6,7 @@ export default class Button extends Component {
   render() {
     return (
       <a href className={`${this.props.color} `}>
-        {this.props.color}
+        {this.props.children}
       </a>
     );
   }
