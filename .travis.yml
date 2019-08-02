@@ -1,8 +1,10 @@
 language: node_js
 node_js:
 - stable
+cache:
+  directories:
+  - node_modules
 script:
-- npm install
 - npm run build
 deploy:
 - provider: npm
