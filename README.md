@@ -6,3 +6,4 @@
 
 [![Build Status](https://travis-ci.org/zapify-ui/zapify.svg?branch=Staging)](https://travis-ci.org/zapify-ui/zapify)
 [![Netlify Status](https://api.netlify.com/api/v1/badges/71ceb923-c95d-413d-9519-30c7931fc134/deploy-status)](https://app.netlify.com/sites/zapify/deploys)
+[![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/zapify-ui/zapify/blob/Staging/LICENSE) 
