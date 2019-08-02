@@ -11,7 +11,7 @@ function App() {
   return (
     <div className="App">
       <div>
-        <Typography>Zapify</Typography>
+        <Typography variant="h1">Zapify</Typography>
 
         <Box color="boxPrimary" p={2} m={2.5} />
         <Box color="boxSecondary" p={2} m={2.5} />
