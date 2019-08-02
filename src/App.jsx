@@ -5,11 +5,14 @@ import Button from "./Components/Inputs/Buttons/Buttons";
 import "./App.css";
 import Container from "./Components/Layout/Container/Container";
 import "./App.css";
+import Typography from "./Components/Data Display/Typography/Typography";
 
 function App() {
   return (
     <div className="App">
       <div>
+        <Typography>Zapify</Typography>
+
         <Box color="boxPrimary" p={2} m={2.5} />
         <Box color="boxSecondary" p={2} m={2.5} />
         <Box color="boxTertiary" p={2} m={2.5} />
