@@ -1,0 +1,50 @@
+@import "../../../Styles/globals.scss";
+
+html {
+    box-sizing: border-box;
+  }
+  
+  *,
+  *:before,
+  *:after {
+    box-sizing: inherit;
+  }
+
+  .zapRow:after {
+    display: table;
+    clear: both;
+    content: '';
+  }
+
+  .zapGrid {
+    max-width: 1140px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+//   .zapRow .zapItem  {
+//     width: 33.33333%;
+//     float: left;
+//   }
+
+  .zapItem {
+    color: white;
+    width: calc((100% - 20px * 3) / 3);
+    margin-right: 10px;
+    margin-left: 10px;
+    float: left;
+    border: 1px solid black;
+    margin-top: 10px;
+    font-size: 1.5em;
+  }
+
+  .zapItem2 {
+    color: white;
+    width: calc((100% - 20px * 4) / 4);
+    margin-right: 10px;
+    margin-left: 10px;
+    float: left;
+    border: 1px solid black;
+    margin-top: 10px;
+    font-size: 1.5em;
+  }

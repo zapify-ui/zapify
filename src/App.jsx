@@ -6,6 +6,7 @@ import "./App.scss";
 import Container from "./Components/Layout/Container/Container";
 import Typography from "./Components/Data Display/Typography/Typography";
 import TextField from "./Components/Inputs/TextField/TextField";
+import Grid from "./Components/Layout/Grid/Grid";
 
 function App() {
   return (
@@ -19,12 +20,14 @@ function App() {
         <Box color="darkSecondary" p={2} m={2.5} />
         <Box color="darkTertiary" p={2} m={2.5} />
         <Box color="disabled" p={2} m={2.5} />
+        <Grid />
         <Button color="primaryButton">Button</Button>
         <TextField>Input</TextField>
         <Container type="fluid" maxWidth="sm" />
         <Container type="fluid" maxWidth="md" />
         <Container type="fluid" maxWidth="xl" />
         <Container type="fixed" />
+        
       </div>
     </div>
   );
