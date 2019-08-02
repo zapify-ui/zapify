@@ -11,7 +11,6 @@ function App() {
     <div className="App">
       <div>
         <Typography variant="h1">Zapify</Typography>
-
         <Box color="boxPrimary" p={2} m={2.5} />
         <Box color="boxSecondary" p={2} m={2.5} />
         <Box color="boxTertiary" p={2} m={2.5} />
@@ -19,9 +18,7 @@ function App() {
         <Box color="darkSecondary" p={2} m={2.5} />
         <Box color="darkTertiary" p={2} m={2.5} />
         <Box color="disabled" p={2} m={2.5} />
-        <Button color="primaryButton">Primary Button</Button>
-        <Button color="secondaryButton">Secondary Button</Button>
-
+        <Button color="primaryButton">Button</Button>
         <Container type="fluid" maxWidth="sm" />
         <Container type="fluid" maxWidth="md" />
         <Container type="fluid" maxWidth="xl" />
