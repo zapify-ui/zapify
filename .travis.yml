@@ -14,10 +14,8 @@ deploy:
     on:
       repo: zapify-ui/zapify
       branch: Staging
-  - provider: pages
+  - provider: script
+    script: netlify deploy -s $NETLIFY_SITE_ID -t $NETLIFY_ACCESS_TOKEN -p ./build
     skip_cleanup: true
-    github_token: $github_token
-    local_dir: build
     on:
       branch: Staging
-  
