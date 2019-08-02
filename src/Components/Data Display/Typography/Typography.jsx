@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import PropTypes from "prop-types";
 
-import "./typography.scss";
+import "./typographyStyles.scss";
 
 export default class Typography extends Component {
   render() {
