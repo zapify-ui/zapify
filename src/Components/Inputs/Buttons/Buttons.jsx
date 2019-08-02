@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import Proptypes from "prop-types";
 import Typography from "../../Data Display/Typography/Typography";
-import "./styles.scss";
+import "./buttonStyles.scss";
 
 export default class Button extends Component {
   render() {
