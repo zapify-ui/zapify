@@ -7,13 +7,14 @@ export default class Box extends Component {
     const boxColor = this.props.color;
     const boxPadding = `${this.props.p}em`;
     const boxMargin = `${this.props.m}em`;
-
+    const textColor = this.props.color === "disabled" ? ("black") : ("white");
     return (
       <div
         className={boxColor}
         style={{
           padding: `${boxPadding}`,
-          margin: `${boxMargin}`
+          margin: `${boxMargin}`,
+          color: `${textColor}`
         }}
       >
         This is {this.props.color}
