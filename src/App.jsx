@@ -2,9 +2,8 @@
 import React from "react";
 import Box from "./Components/Layout/Box/Box";
 import Button from "./Components/Inputs/Buttons/Buttons";
-import "./App.css";
+import "./App.scss";
 import Container from "./Components/Layout/Container/Container";
-import "./App.css";
 import Typography from "./Components/Data Display/Typography/Typography";
 
 function App() {
