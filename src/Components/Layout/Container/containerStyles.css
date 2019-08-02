@@ -1,14 +1,15 @@
 .sm {
-  background-color: #ECF0F1;
-  height: 50vh;
+  background-color: #ecf0f1;
+  height: 20vh;
 }
 
 .md {
-  background-color: #ECF0F1;
-  height: 75vh;
+  background-color: #d0ace4;
+  height: 60vh;
 }
 
 .xl {
-  background-color: #ECF0F1;
+  background-color: #aadb1e;
   height: 100vh;
 }
+/*# sourceMappingURL=containerStyles.css.map */

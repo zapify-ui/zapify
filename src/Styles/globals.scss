@@ -1,5 +1,7 @@
-$primaryColor: #eb8f9e;
-$secondaryColor: #80ff80;
+@import url("https://fonts.googleapis.com/css?family=Montserrat&display=swap");
+// Colors
+$primaryColor: #be1e6b;
+$secondaryColor: #692478;
 $tertiaryColor: #ffd280;
 $primaryDark: #000000;
 $secondaryDark: #404040;
@@ -7,9 +9,11 @@ $tertiaryDark: #737373;
 $disabled: #d9d9d9;
 $defaultw: #ffffff;
 $defaultb: #000000;
-$containerFluidsm:#ECF0F1;
-$containerFluidmd:#D0ACE4;
-$containerFluidxl:#AADB1E;
-$containerFixed:#F9690E;
+$containerFluidsm: #ecf0f1;
+$containerFluidmd: #d0ace4;
+$containerFluidxl: #aadb1e;
+$containerFixed: #f9690e;
 $grey: #888888;
 
+// Fonts
+$zapFont: "Montserrat";

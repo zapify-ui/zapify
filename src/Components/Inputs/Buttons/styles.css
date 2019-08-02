@@ -1,8 +1,260 @@
 .primaryButton {
-  background-color: #eb8f9e;
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  padding: 0 0.6em;
+  height: 2.4em;
+  border-radius: 5px;
+  line-height: 2.4;
+  overflow: hidden;
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 2em;
+  margin: 10px 10px 10px 10px;
+  letter-spacing: 0.01em;
+  max-width: 100%;
+  text-overflow: ellipsis;
+  white-space: normal;
+  overflow: hidden;
+  padding: 0 1em;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-tap-highlight-color: transparent;
+}
+
+.primaryButton:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  cursor: pointer;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+  background-color: #be1e6b;
+  -webkit-transition: background-color 400ms;
+  transition: background-color 400ms;
+}
+
+.primaryButton:after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  cursor: pointer;
+  top: 50%;
+  background: #aeaeae;
+  z-index: -1;
+  width: 100%;
+  padding-top: 120%;
+  border-radius: 100%;
+  opacity: 0;
+  -webkit-transform: translateX(-50%) translateY(-50%) scale(0.2);
+          transform: translateX(-50%) translateY(-50%) scale(0.2);
+  -webkit-transition: opacity 500ms, -webkit-transform 500ms;
+  transition: opacity 500ms, -webkit-transform 500ms;
+  transition: opacity 500ms, transform 500ms;
+  transition: opacity 500ms, transform 500ms, -webkit-transform 500ms;
+  -webkit-transition-delay: 0, 100ms;
+          transition-delay: 0, 100ms;
+}
+
+.no-touch .primaryButton:hover:before {
+  background-color: #30bbbb;
+}
+
+.primaryButton:active {
+  color: #fff;
+}
+
+.primaryButton:active:after {
+  -webkit-transform: translateX(-50%) translateY(-50%) scale(1.1);
+          transform: translateX(-50%) translateY(-50%) scale(1.1);
+  -webkit-transition: opacity 100ms, -webkit-transform 100ms;
+  transition: opacity 100ms, -webkit-transform 100ms;
+  transition: opacity 100ms, transform 100ms;
+  transition: opacity 100ms, transform 100ms, -webkit-transform 100ms;
+  -webkit-transition-delay: 0s;
+          transition-delay: 0s;
+  opacity: 1;
 }
 
 .secondaryButton {
-  background-color: #80ff80;
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  padding: 0 0.6em;
+  height: 2.4em;
+  border-radius: 5px;
+  line-height: 2.4;
+  overflow: hidden;
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 2em;
+  margin: 10px 10px 10px 10px;
+  letter-spacing: 0.01em;
+  max-width: 100%;
+  text-overflow: ellipsis;
+  white-space: normal;
+  overflow: hidden;
+  padding: 0 1em;
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-tap-highlight-color: transparent;
+}
+
+.secondaryButton:before {
+  content: "";
+  position: absolute;
+  background-color: #692478;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+  cursor: pointer;
+  -webkit-transition: background-color 400ms;
+  transition: background-color 400ms;
+}
+
+.secondaryButton:after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  background: #aeaeae;
+  z-index: -1;
+  cursor: pointer;
+  width: 100%;
+  padding-top: 120%;
+  border-radius: 100%;
+  opacity: 0;
+  -webkit-transform: translateX(-50%) translateY(-50%) scale(0.2);
+          transform: translateX(-50%) translateY(-50%) scale(0.2);
+  -webkit-transition: opacity 500ms, -webkit-transform 500ms;
+  transition: opacity 500ms, -webkit-transform 500ms;
+  transition: opacity 500ms, transform 500ms;
+  transition: opacity 500ms, transform 500ms, -webkit-transform 500ms;
+  -webkit-transition-delay: 0, 100ms;
+          transition-delay: 0, 100ms;
+}
+
+.no-touch .secondaryButton:hover:before {
+  background-color: #30bbbb;
+}
+
+.secondaryButton:active {
+  color: #fff;
+}
+
+.secondaryButton:active:after {
+  -webkit-transform: translateX(-50%) translateY(-50%) scale(1.1);
+          transform: translateX(-50%) translateY(-50%) scale(1.1);
+  -webkit-transition: opacity 100ms, -webkit-transform 100ms;
+  transition: opacity 100ms, -webkit-transform 100ms;
+  transition: opacity 100ms, transform 100ms;
+  transition: opacity 100ms, transform 100ms, -webkit-transform 100ms;
+  -webkit-transition-delay: 0s;
+          transition-delay: 0s;
+  opacity: 1;
+}
+
+.tertiaryButton {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  padding: 0 0.6em;
+  height: 2.4em;
+  border-radius: 5px;
+  line-height: 2.4;
+  overflow: hidden;
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 2em;
+  margin: 10px 10px 10px 10px;
+  letter-spacing: 0.01em;
+  max-width: 100%;
+  text-overflow: ellipsis;
+  white-space: normal;
+  overflow: hidden;
+  padding: 0 1em;
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-tap-highlight-color: transparent;
+}
+
+.tertiaryButton:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+  background-color: #ffd280;
+  cursor: pointer;
+  -webkit-transition: background-color 400ms;
+  transition: background-color 400ms;
+}
+
+.tertiaryButton:after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  background: #aeaeae;
+  z-index: -1;
+  width: 100%;
+  padding-top: 120%;
+  border-radius: 100%;
+  opacity: 0;
+  -webkit-transform: translateX(-50%) translateY(-50%) scale(0.2);
+          transform: translateX(-50%) translateY(-50%) scale(0.2);
+  -webkit-transition: opacity 500ms, -webkit-transform 500ms;
+  transition: opacity 500ms, -webkit-transform 500ms;
+  transition: opacity 500ms, transform 500ms;
+  transition: opacity 500ms, transform 500ms, -webkit-transform 500ms;
+  -webkit-transition-delay: 0, 100ms;
+          transition-delay: 0, 100ms;
+}
+
+.no-touch .tertiaryButton:hover:before {
+  background-color: #30bbbb;
+}
+
+.tertiaryButton:active {
+  color: #fff;
+}
+
+.tertiaryButton:active:after {
+  -webkit-transform: translateX(-50%) translateY(-50%) scale(1.1);
+          transform: translateX(-50%) translateY(-50%) scale(1.1);
+  -webkit-transition: opacity 100ms, -webkit-transform 100ms;
+  transition: opacity 100ms, -webkit-transform 100ms;
+  transition: opacity 100ms, transform 100ms;
+  transition: opacity 100ms, transform 100ms, -webkit-transform 100ms;
+  -webkit-transition-delay: 0s;
+          transition-delay: 0s;
+  opacity: 1;
 }
 /*# sourceMappingURL=styles.css.map */

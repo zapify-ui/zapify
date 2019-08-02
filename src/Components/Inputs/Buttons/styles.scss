@@ -36,10 +36,11 @@
     bottom: 0;
     left: 0;
     z-index: -1;
-    background-color: $primaryColor;
-    //background: linear-gradient( 180deg, darken(#39CCCC,5%), darken(#39CCCC,5%) 50%, #39CCCC 50%, #39CCCC );
-    //background-size: 100% 200% ;
-    //background-position: 0 100%;
+    // background-color: $primaryColor;
+    //background: linear-gradient( 180deg, darken($primaryColor,5%), darken($secondaryColor,5%) 50%, $primaryColor 50%, $secondaryColor );
+    background: linear-gradient(60deg, $primaryColor, $secondaryColor);
+    background-size: 100% 200% ;
+    background-position: 0 100%;
     transition: background-color 400ms;
   }
   &:after {
@@ -85,7 +86,7 @@
   border-radius: 5px;
   line-height: 2.4;
   overflow: hidden;
-  color: $grey;
+  color: $defaultw;
   font-weight: bold;
   font-size: 2em;
   margin: 10px 10px 10px 10px;
