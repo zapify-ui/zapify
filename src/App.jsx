@@ -6,6 +6,7 @@ import "./App.scss";
 import Container from "./Components/Layout/Container/Container";
 import Typography from "./Components/Data Display/Typography/Typography";
 import TextField from "./Components/Inputs/TextField/TextField";
+import Media from "./Components/Layout/Media/Media"
 
 function App() {
   return (
@@ -25,6 +26,7 @@ function App() {
         <Container type="fluid" maxWidth="md" />
         <Container type="fluid" maxWidth="xl" />
         <Container type="fixed" />
+        <Media typeGet = "linear"/>
       </div>
     </div>
   );
