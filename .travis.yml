@@ -1,17 +1,21 @@
 language: node_js
 node_js:
-  - "stable"
+- stable
 cache:
   directories:
-    - node_modules
+  - node_modules
 script:
   - npm run build
-
-
 deploy:
-  provider: pages
-  skip_cleanup: true
-  github_token: $github_token
-  local_dir: build
-  on:
-    branch: Staging
+  - provider: pages
+    skip_cleanup: true
+    github_token: $github_token
+    local_dir: build
+    on:
+      branch: Staging
+  - provider: npm
+    email: me@piyushmehta.com
+    api_key:
+      secure: oWnN9qVfagHp4mLoJZTVV/Gymf+9kiRVt0hv8zuBUAk26wnphViXNi1w3RmIEU+cwhSxsNnaESPhwSFA90/cqijWrHGXHi3iKXo01m0Z/1iXCvplxjmXg7laZGFmhkvl4gREjuhaOJnomu0Te7Q+lxR+M95utSQBG8StElWc4XbIlDOZ2cPz4b9h6MlmwiY6PzzyQCtKV+KSUSyZW2y7f20lqX/oxurdaeOULxo6YzRwrDBROfUXm8aVU4223vcIwEf6l2dJxeM4kcZlju76EARQMB+OppJmG5inKsgjOB3pTekpke+Nju6VYZzwHNyUro53i6CUoTWNrzQ2az4eKLzNyoMScsqzBcoHQavqJNZB+eOvb3dwvsWSEcej/JKzV/SlxZKiEn6R3atONflPRaDeZ1ZBXydXrvLZSgzHWaodZtc8Oi7U3Y3QibaQE6Vt8PKx5VgxROi+7YMYEBupDwQELnwzbuRmY0QLIvhBW8IVolSVbG+hutA5rNW0fPH5/m1QoUI3Or2UQRuWR1R112/1/RqkscbVCOIWgtAfnsLq69ApYIADx8FElQUB//IPTKmTzaTn9mdWG8dALwjKFJohPVhM6FD4v//HyD/9G3cCZRXXVhqKSGPm8AJDpNp3eu+1DhpgLCu+gh8NQblMXhSJ4z5iWlDN9yKNz4Yhtc8=
+    on:
+      repo: zapify-ui/zapify
