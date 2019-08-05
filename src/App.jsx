@@ -14,7 +14,7 @@ function App() {
   return (
     <div className="App">
     
-      {/* <Typography variant="h1">Zapify</Typography>
+      <Typography variant="h1">Zapify</Typography>
       <Box color="boxPrimary" p={2} m={2.5} />
       <Box color="boxSecondary" p={2} m={2.5} />
       <Box color="boxTertiary" p={2} m={2.5} />
@@ -27,7 +27,7 @@ function App() {
       <Container type="fluid" maxWidth="sm" />
       <Container type="fluid" maxWidth="md" />
       <Container type="fluid" maxWidth="xl" />
-      <Container type="fixed" /> */}
+      <Container type="fixed" />
       <Media typeGet = "linear">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</Media>
       
       
