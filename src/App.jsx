@@ -7,6 +7,8 @@ import Container from "./Components/Layout/Container/Container";
 import Typography from "./Components/Data Display/Typography/Typography";
 import TextField from "./Components/Inputs/TextField/TextField";
 import Grid from "./Components/Layout/Grid/Grid";
+import GridSpacing from './Components/Layout/Grid/GridSpacing';
+import Media from "./Components/Layout/Media/Media"
 
 function App() {
   return (
@@ -21,13 +23,16 @@ function App() {
         <Box color="darkTertiary" p={2} m={2.5} />
         <Box color="disabled" p={2} m={2.5} />
         <Grid />
+        <GridSpacing nBox={4}>hbscdjhb</GridSpacing>
+        <GridSpacing nBox={3}>fsafvcsda</GridSpacing>
+        <GridSpacing nBox={5}>VCSADFw</GridSpacing>
         <Button color="primaryButton">Button</Button>
         <TextField>Input</TextField>
         <Container type="fluid" maxWidth="sm" />
         <Container type="fluid" maxWidth="md" />
         <Container type="fluid" maxWidth="xl" />
         <Container type="fixed" />
-        
+        <Media typeGet = "linear"/>
       </div>
     </div>
   );
