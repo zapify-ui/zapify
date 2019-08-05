@@ -28,7 +28,7 @@ function App() {
       <Container type="fluid" maxWidth="md" />
       <Container type="fluid" maxWidth="xl" />
       <Container type="fixed" /> */}
-      <Media typeGet = "linear">HELLO</Media>
+      <Media typeGet = "linear">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</Media>
       
       
     </div>
