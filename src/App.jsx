@@ -6,6 +6,7 @@ import "./App.scss";
 import Container from "./Components/Layout/Container/Container";
 import Typography from "./Components/Data Display/Typography/Typography";
 import TextField from "./Components/Inputs/TextField/TextField";
+import TextFieldHook from "./Components/Inputs/TextField/TextFieldHook";
 import GridSpacing from './Components/Layout/Grid/GridSpacing';
 import Media from "./Components/Layout/Media/Media"
 
@@ -25,6 +26,7 @@ function App() {
         <GridSpacing nBox={5} m={3}>VCSADFw</GridSpacing>
         <Button color="primaryButton">Button</Button>
         <TextField>Input</TextField>
+        <TextFieldHook />
         <Container type="fluid" maxWidth="sm" />
         <Container type="fluid" maxWidth="md" />
         <Container type="fluid" maxWidth="xl" />
