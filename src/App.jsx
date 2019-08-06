@@ -12,7 +12,7 @@ import Media from "./Components/Layout/Media/Media"
 
 function App() {
   return (
-    <div >
+    <div className="App">
         <Typography variant="h1">Zapify</Typography>
         <Box color="boxPrimary" p={2} m={2.5} />
         <Box color="boxSecondary" p={2} m={2.5} />
