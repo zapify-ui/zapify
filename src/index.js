@@ -1,1 +1,1 @@
-export { default as button } from "./Components/Inputs/Buttons/Buttons";
+export { default as Typography } from "./Typography";
