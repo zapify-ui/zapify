@@ -6,7 +6,7 @@ import "./buttonStyles.scss";
 export default class Button extends Component {
   render() {
     return (
-      <a href className={`${this.props.color} `}>
+      <a href className={`${this.props.color}`}>
         <Typography> {this.props.children}</Typography>
       </a>
     );

@@ -12,8 +12,7 @@ import Media from "./Components/Layout/Media/Media"
 
 function App() {
   return (
-    <div className="App">
-      <div>
+    <div >
         <Typography variant="h1">Zapify</Typography>
         <Box color="boxPrimary" p={2} m={2.5} />
         <Box color="boxSecondary" p={2} m={2.5} />
@@ -23,9 +22,9 @@ function App() {
         <Box color="darkTertiary" p={2} m={2.5} />
         <Box color="disabled" p={2} m={2.5} />
         <Grid />
-        <GridSpacing nBox={4}>hbscdjhb</GridSpacing>
-        <GridSpacing nBox={3}>fsafvcsda</GridSpacing>
-        <GridSpacing nBox={5}>VCSADFw</GridSpacing>
+        <GridSpacing nBox={4} m={3}>hbscdjhb</GridSpacing>
+        <GridSpacing nBox={3} m={3}>fsafvcsda</GridSpacing>
+        <GridSpacing nBox={5} m={3}>VCSADFw</GridSpacing>
         <Button color="primaryButton">Button</Button>
         <TextField>Input</TextField>
         <Container type="fluid" maxWidth="sm" />
@@ -33,7 +32,6 @@ function App() {
         <Container type="fluid" maxWidth="xl" />
         <Container type="fixed" />
         <Media typeGet = "linear"/>
-      </div>
     </div>
   );
 }
