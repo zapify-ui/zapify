@@ -6,7 +6,6 @@ import "./App.scss";
 import Container from "./Components/Layout/Container/Container";
 import Typography from "./Components/Data Display/Typography/Typography";
 import TextField from "./Components/Inputs/TextField/TextField";
-import Grid from "./Components/Layout/Grid/Grid";
 import GridSpacing from './Components/Layout/Grid/GridSpacing';
 import Media from "./Components/Layout/Media/Media"
 
@@ -21,7 +20,6 @@ function App() {
         <Box color="darkSecondary" p={2} m={2.5} />
         <Box color="darkTertiary" p={2} m={2.5} />
         <Box color="disabled" p={2} m={2.5} />
-        <Grid />
         <GridSpacing nBox={4} m={3}>hbscdjhb</GridSpacing>
         <GridSpacing nBox={3} m={3}>fsafvcsda</GridSpacing>
         <GridSpacing nBox={5} m={3}>VCSADFw</GridSpacing>

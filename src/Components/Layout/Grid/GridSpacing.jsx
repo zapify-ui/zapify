@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import Proptypes from "prop-types";
+import Proptypes from 'prop-types';
 import './stylesGridSpacing.scss';
 
 export default class GridSpacing extends Component {
@@ -8,10 +8,10 @@ export default class GridSpacing extends Component {
         this.createTable = this.createTable.bind(this);
     }
 
-    createTable = () => {
+    createTable = (props) => {
         let table = []
         const nBox = this.props.nBox;
-        const m = (this.props.m);
+        const m = this.props.m;
         // Outer loop to create parent
         for (let i = 0; i < 1; i++) {
           let children = []
@@ -26,30 +26,18 @@ export default class GridSpacing extends Component {
         }
         return table
       }
-    render() { 
-        return ( 
+    render(){ 
+        return( 
             <div className="GridSpacing">
-             <table>{this.createTable()}</table>
-            </div>
+            <table>{this.createTable()}</table>
+           </div>
             );
     }
 }
 
-function tweetLength(props, nBox, GridSpacing) {
-    GridSpacing = GridSpacing || 'ANONYMOUS';
-  
-    if (props[nBox]) {
-      let value = props[nBox];
-      if (typeof value === 'number') {
-          return (value>2 && value<7) ? null : new Error(" is longer than 140 characters");
-      }
-    }
-  
-    // assume all ok
-    return null;
-  }
 
 GridSpacing.propType = {
-    nBox: tweetLength
+    nBox: Proptypes.number,
+    m: Proptypes.number
   };
 

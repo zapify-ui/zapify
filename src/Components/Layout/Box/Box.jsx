@@ -23,7 +23,7 @@ export default class Box extends Component {
   }
 }
 
-Box.propType = {
+Box.propTypes = {
   color: Proptypes.string,
   p: Proptypes.number,
   m: Proptypes.number
