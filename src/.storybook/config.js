@@ -1,6 +1,19 @@
 import { addParameters, configure } from "@storybook/react";
+import { create } from "@storybook/theming";
 
 const req = require.context("../stories", true, /\.stories\.js$/);
+
+// coral / ocean highlights
+const theme = create({
+  base: "#111",
+  colorPrimary: "#f1f1f1",
+  colorSecondary: "#111",
+  textColor: "#00e9ff",
+  barBg: "#111",
+  barTextColor: "#f1f1f1",
+  appContentBg: "#444",
+  appBg: "#555"
+});
 
 function loadStories() {
   req.keys().forEach(filename => req(filename));
@@ -9,16 +22,18 @@ function loadStories() {
 // Option defaults:
 addParameters({
   options: {
+    theme: theme,
     /**
      * name to display in the top left corner
      * @type {String}
      */
     name: "Zapify-ui",
+    title: "Zapify-ui",
     /**
      * URL for name in top left corner to link to
      * @type {String}
      */
-    url: "#",
+    url: "zapify.netlify.com",
     /**
      * show story component as full screen
      * @type {Boolean}
