@@ -1,0 +1,36 @@
+@import "../../styles/ColorSchema.scss";
+.Primary {
+  background: linear-gradient(60deg, $blue, $green);
+  color: #000000;
+}
+
+.boxSecondary {
+  background-color: #692478;
+  color: #000000;
+}
+
+.boxTertiary {
+  background-color: #ffd280;
+  color: #000000;
+}
+
+.darkPrimary {
+  background-color: #000000;
+  color: #ffffff;
+}
+
+.darkSecondary {
+  background-color: #404040;
+  color: #ffffff;
+}
+
+.darkTertiary {
+  background-color: #737373;
+  color: #ffffff;
+}
+
+.disabled {
+  background-color: #d9d9d9;
+  color: #ffffff;
+}
+/*# sourceMappingURL=boxStyles.css.map */

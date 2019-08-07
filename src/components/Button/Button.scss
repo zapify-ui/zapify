@@ -1,0 +1,69 @@
+@import "../../styles/ColorSchema.scss";
+.primaryButton {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  padding: 0 0.3em;
+  height: 2.4em;
+  border-radius: 5px;
+  line-height: 2.1;
+  overflow: hidden;
+  color: $white;
+  font-size: 1.1em;
+  margin: 10px 10px 10px 10px;
+  letter-spacing: 0.01em;
+  max-width: 100%;
+  text-overflow: ellipsis;
+  white-space: normal;
+  overflow: hidden;
+  padding: 0 1em;
+  user-select: none;
+  cursor: pointer;
+  background: linear-gradient(60deg, $blue, $green);
+  text-align: center;
+  text-decoration: none;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-tap-highlight-color: transparent;
+  &:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    cursor: pointer;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+    background-color: $green;
+    //background: linear-gradient( 180deg, darken($primaryColor,5%), darken($secondaryColor,5%) 50%, $primaryColor 50%, $secondaryColor );
+    // background: linear-gradient(60deg, $blue, $green);
+    background-size: 100% 200%;
+    background-position: 0 100%;
+    transition: background-color 400ms;
+  }
+  &:after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    cursor: pointer;
+    top: 50%;
+    background: lighten(blue, 15%);
+    z-index: -1;
+    width: 100%;
+    padding-top: 120%;
+    border-radius: 100%;
+    opacity: 0;
+    transform: translateX(-50%) translateY(-50%) scale(0.09);
+    transition: opacity 500ms, transform 500ms;
+    transition-delay: 0, 100ms;
+  }
+
+  &:active {
+    color: black;
+    &:after {
+      transform: translateX(-50%) translateY(-50%) scale(1.1);
+      transition: opacity 100ms, transform 100ms;
+      transition-delay: 0s;
+      opacity: 1;
+    }
+  }
+}
