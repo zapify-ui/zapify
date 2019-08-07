@@ -1,5 +1,5 @@
-@import url("https://fonts.googleapis.com/css?family=Montserrat&display=swap");
-$zapFont: Montserrat;
+@import "../../styles/ColorSchema.scss";
+
 .typography {
   font-family: $zapFont, sans-serif;
   color: silver;
