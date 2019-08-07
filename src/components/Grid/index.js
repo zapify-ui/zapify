@@ -1,18 +1,19 @@
-// import React, { Component } from "react";
+// /* eslint-disable react/destructuring-assignment */
+// /* eslint-disable react/button-has-type */
+// /* eslint-disable react/prefer-stateless-function */
+
+// import React from "react";
 // import Proptypes from "prop-types";
 // import "./Grid.css";
 
-// export default class GridSpacing extends Component {
-//   constructor(props) {
-//     super(props);
+// export default function GridSpacing(){
+  
 
-//     this.createTable = this.createTable.bind(this);
-//   }
-
-//   createTable = props => {
+//   const createTable = props => {
 //     let table = [];
-//     const nBox = this.props.nBox;
-//     const m = this.props.m;
+//     const nBox = props.nBox;
+//     const m = props.m;
+//     console.log(nBox);
 //     // Outer loop to create parent
 //     for (let i = 0; i < 1; i++) {
 //       let children = [];
@@ -26,7 +27,7 @@
 //                 margin: `${m}rem`
 //               }}
 //             >
-//               {this.props.children}
+//               {props.children}
 //             </div>
 //           </td>
 //         );
@@ -40,13 +41,12 @@
 //     }
 //     return table;
 //   };
-//   render() {
 //     return (
 //       <div className="GridSpacing">
 //         <table>{this.createTable}</table>
 //       </div>
 //     );
-//   }
+
 // }
 
 // GridSpacing.propType = {
