@@ -5,14 +5,12 @@ import React from "react";
 import Proptypes from "prop-types";
 import "./Button.css";
 
-class Button extends React.Component {
-  render() {
-    return (
-      <div>
-        <button className={this.props.color}>{this.props.children}</button>
-      </div>
-    );
-  }
+function Button(props) {
+  return (
+    <div>
+      <button className={props.color}>{props.children}</button>
+    </div>
+  );
 }
 
 Button.propType = {
