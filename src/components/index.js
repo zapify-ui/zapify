@@ -6,3 +6,4 @@ export { default as TextField } from "./TextField";
 export { default as Container } from "./Container";
 export { default as Grid } from "./Grid";
 export { default as Media } from "./Media";
+export { default as Switch } from "./Switch";
