@@ -1,0 +1,14 @@
+@import "../../styles/ColorSchema.scss";
+
+.sm{
+    background-color: $blue-grad;
+    height:20vh;
+}
+.md{
+    background-color: $dark-gray-grad;
+    height:60vh;
+}
+.xl{
+    background-color: $dark-gray-grad;
+    height: 100vh;
+}
