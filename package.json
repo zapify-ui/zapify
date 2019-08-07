@@ -15,6 +15,8 @@
     "dev": "webpack --mode development --env.dist=false",
     "dev:dist": "webpack --mode development",
     "lint": "eslint src/**; exit 0",
+    "build-storybook": "build-storybook -c .storybook -o .out",
+    "deploy-storybook": "storybook-to-ghpages",
     "lint:watch": "esw -w lib/**",
     "lint-staged": {
       "*.{js,jsx}": [
@@ -28,6 +30,11 @@
     "start": "npm-run-all -p watch-css storybook",
     "storybook": "start-storybook -p 9001 -c src/.storybook",
     "watch-css": "npm run build-css && node-sass-chokidar src/components/ -o src/components/ --watch --recursive"
+  },
+  "storybook-deployer": {
+    "gitUsername": "piyush97",
+    "gitEmail": "me@piyushmehta.com",
+    "commitMessage": "Deploy Storybook [skip ci]"
   },
   "repository": {
     "type": "git",
@@ -48,6 +55,7 @@
     "@storybook/addon-actions": "5.1.10",
     "@storybook/addon-links": "5.1.10",
     "@storybook/react": "5.1.10",
+    "@storybook/storybook-deployer": "^2.8.1",
     "babel-cli": "^6.26.0",
     "babel-eslint": "^10.0.1",
     "babel-loader": "^8.0.0-beta.6",
