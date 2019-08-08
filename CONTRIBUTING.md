@@ -1,7 +1,7 @@
 # Contributing to Zapify-ui
 Welcome, and thank you for taking the time to contribute to Zapify-ui!
 ## Code of Conduct
-By participating in this project, you're agreeing to comply with our [CODE_OF_CONDUCT].(https://github.com/zapify-ui/zapify/blob/master/CODE_OF_CONDUCT.md)
+By participating in this project, you're agreeing to comply with our [CODE_OF_CONDUCT](https://github.com/zapify-ui/zapify/blob/master/CODE_OF_CONDUCT.md)
 ## How can I contribute?
 There are several ways that you can contribute. We would be tremendously grateful for bug fixes, development of new features as well as early feedback on in-development features, bug reports with repro steps, documentation updates, feature tests, suggestions, and ideas.
 ### Reporting Issues
