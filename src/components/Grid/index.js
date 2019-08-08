@@ -9,48 +9,44 @@ import React from "react";
 import Proptypes from "prop-types";
 import "./Grid.css";
 
-function GridSpacing(props){
-    const nBox = props.nBox;
-    const m = props.m;
-    return (
-      <div className="GridSpacing">
-       {<CreateTable nBox={nBox} m={m}/>}
-      </div>
-    );
+function GridSpacing(props) {
+  const nBox = props.nBox;
+  const m = props.m;
+  return <div className="GridSpacing">{<CreateTable nBox={nBox} m={m} />}</div>;
 }
 
- function CreateTable(props) {
-    let table = [];
-    const nBox = props.nBox;
-    const m = props.m;
-    console.log(nBox);
-    // Outer loop to create parent
-    for (let i = 0; i < 1; i++) {
-      let children = [];
-      //Inner loop to create children
-      for (let j = 0; j < nBox; j++) {
-        children.push(
-          <td>
-            <div
-              className="GridBox"
-              style={{
-                margin: `${m}rem`
-              }}
-            >
-              {props.children}
-            </div>
-          </td>
-        );
-      }
-      //Create the parent and add the children
-      table.push(
-        <tbody>
-          <tr>{children}</tr>
-        </tbody>
+function CreateTable(props) {
+  let table = [];
+  const nBox = props.nBox;
+  const m = props.m;
+  console.log(nBox);
+  // Outer loop to create parent
+  for (let i = 0; i < 1; i++) {
+    let children = [];
+    //Inner loop to create children
+    for (let j = 0; j < nBox; j++) {
+      children.push(
+        <td>
+          <div
+            className="GridBox"
+            style={{
+              margin: `${m}rem`
+            }}
+          >
+            {props.children}
+          </div>
+        </td>
       );
     }
-    return table;
-  };
+    //Create the parent and add the children
+    table.push(
+      <tbody>
+        <tr>{children}</tr>
+      </tbody>
+    );
+  }
+  return table;
+}
 
 GridSpacing.propType = {
   nBox: Proptypes.number,
