@@ -4,28 +4,28 @@
   color: #000000;
 }
 
-.boxSecondary {
-  background-color: #692478;
+.Secondary {
+  background: linear-gradient(60deg, purple, pink);
   color: #000000;
 }
 
-.boxTertiary {
-  background-color: #ffd280;
+.Tertiary {
+  background: linear-gradient(60deg, #ffff00, #ffffff);
   color: #000000;
 }
 
-.darkPrimary {
+.dark {
   background-color: #000000;
   color: #ffffff;
 }
 
-.darkSecondary {
-  background-color: #404040;
+.darkPrimary {
+  background: linear-gradient(to left, #ff0000 0%, #000000 60%);
   color: #ffffff;
 }
 
-.darkTertiary {
-  background-color: #737373;
+.darkSecondary {
+  background: linear-gradient(to left, yellow 0%, #000000 60%);
   color: #ffffff;
 }
 
