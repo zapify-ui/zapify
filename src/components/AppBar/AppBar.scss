@@ -1,0 +1,35 @@
+@import "../../styles/ColorSchema";
+nav {
+  overflow: hidden;
+  background: $blue-grad;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  #logo {
+    font-size: 1.2em;
+    font-family: $zapFont;
+  }
+  ul {
+    text-align: left;
+    font-family: $zapFont;
+
+    list-style-type: none;
+    list-style-type: none;
+    margin: 0;
+    padding: 15px;
+    li {
+      display: inline;
+      font-family: $zapFont;
+      font-size: 17px;
+      a {
+        color: #f2f2f2;
+        text-decoration: none;
+        padding: 14px;
+
+        &:hover {
+          background-color: $blue;
+        }
+      }
+    }
+  }
+}
