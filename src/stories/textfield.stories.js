@@ -5,5 +5,5 @@ import { storiesOf } from "@storybook/react";
 import TextField from "../components/TextField";
 
 storiesOf("TextField", module).add("With label", () => (
-  <TextField>Hello</TextField>
+  <TextField>Input</TextField>
 ));

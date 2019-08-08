@@ -11,7 +11,7 @@ import "./TextField.css";
 function TextField(props) {
   return (
     <div>
-      <label> {props.children}</label>
+      <label>{props.children}</label>
       <input className="input" />
     </div>
   );
