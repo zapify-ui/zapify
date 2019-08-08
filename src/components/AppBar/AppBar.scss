@@ -1,0 +1,55 @@
+@import "../../styles/ColorSchema";
+nav {
+  overflow: hidden;
+  background: $blue-grad;
+  position: fixed;
+  top: 0;
+<<<<<<< HEAD
+  width: 100%;
+  #logo {
+    font-size: 1.2em;
+    font-family: $zapFont;
+  }
+  ul {
+    text-align: left;
+    font-family: $zapFont;
+=======
+
+  width: 100%;
+  #logo {
+    font-size:1.2em;
+    font-family:$zapFont;
+  }
+  ul {
+    text-align: left;
+    font-family:$zapFont;
+>>>>>>> 5a412de02b2acc8000aad1fa021c868af2251308
+
+    list-style-type: none;
+    list-style-type: none;
+    margin: 0;
+    padding: 15px;
+    li {
+      display: inline;
+<<<<<<< HEAD
+      font-family: $zapFont;
+=======
+      font-family:$zapFont;
+>>>>>>> 5a412de02b2acc8000aad1fa021c868af2251308
+      font-size: 17px;
+      a {
+        color: #f2f2f2;
+        text-decoration: none;
+        padding: 14px;
+<<<<<<< HEAD
+
+=======
+        
+>>>>>>> 5a412de02b2acc8000aad1fa021c868af2251308
+        &:hover {
+          background-color: $blue;
+        }
+      }
+    }
+  }
+}
