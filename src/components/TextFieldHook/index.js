@@ -7,7 +7,7 @@
 import React, {useState} from 'react';
 import "./TextFieldHook.css";
 
-function TextFieldHook(){
+function TextFieldHook(props){
          const [input, setInput] = useState("");
     
         const handleChange = (e) => {
@@ -16,7 +16,7 @@ function TextFieldHook(){
         }
     return(
         <div>
-            <label>Input</label>
+            <label>{props.children}</label>
             <input 
               className="input"
               type="text" 
