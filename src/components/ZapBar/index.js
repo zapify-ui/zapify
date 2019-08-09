@@ -2,9 +2,9 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React from "react";
 import PropTypes from "prop-types";
-import "./AppBar.css";
+import "./ZapBar.css";
 
-function AppBar(props) {
+function ZapBar(props) {
   const {
     title,
     links,
@@ -14,7 +14,6 @@ function AppBar(props) {
     logoColor,
     logoSize
   } = props;
-  const _linkList = [];
   const appBarBackground = {
     backgroundColor: color
   };
@@ -28,17 +27,16 @@ function AppBar(props) {
     color: logoColor
   };
 
-  for (let i = 0; i < links.length; i++) {
-    _linkList.push(
-      <li
-        style={{ float: "right ", padding: ".29em .5em .5em .5em" }}
-        className="link"
-      >
-        <a style={{ color: linkColor }}>{links[i]}</a>
-      </li>
-    );
-  }
-
+  const _linkList = links.map(({ name, url }) => (
+    <li
+      style={{ float: "right ", padding: ".29em .5em .5em .5em" }}
+      className="link"
+    >
+      <a style={{ color: linkColor }} href={url}>
+        {name}
+      </a>
+    </li>
+  ));
   return (
     <div id="navigation-bar">
       <nav style={appBarBackground}>
@@ -57,9 +55,9 @@ function AppBar(props) {
   );
 }
 
-AppBar.propTypes = {
+ZapBar.propTypes = {
   title: PropTypes.string,
-  links: PropTypes.arrayOf(PropTypes.string),
+  links: PropTypes.arrayOf(PropTypes.object),
   color: PropTypes.string,
   linkColor: PropTypes.string,
   logoColor: PropTypes.string,
@@ -67,9 +65,12 @@ AppBar.propTypes = {
   logoSize: PropTypes.string
 };
 
-AppBar.defaultProps = {
+ZapBar.defaultProps = {
   title: "Zapify UI",
-  links: ["Rebooting", "UI ", "with", "Hooks"],
+  links: [
+    { name: "Rebooting", url: "https://zapify.netlify.com" },
+    { name: "UI With Hooks", url: "https://zapify.netlify.com" }
+  ],
   color: "#222",
   linkColor: "grey",
   logoColor: "grey",
@@ -78,4 +79,4 @@ AppBar.defaultProps = {
   logoSize: "-2em 0em -0.8em 0.2em"
 };
 
-export default AppBar;
+export default ZapBar;
