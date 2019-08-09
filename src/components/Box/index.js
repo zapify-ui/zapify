@@ -1,8 +1,8 @@
 /* eslint-disable react/destructuring-assignment */
 /* eslint-disable react/button-has-type */
 /* eslint-disable react/prefer-stateless-function */
-import React from "react";
 // import Proptypes from "prop-types";
+import React from "react";
 import "./Box.css";
 
 function Box(props) {
@@ -24,16 +24,16 @@ function Box(props) {
   );
 }
 
-// Box.defaultProps = {
-//   color: "black",
-//   p: "2em",
-//   m: "2.5em"
-// };
+Box.defaultProps = {
+  color: "black",
+  p: "2em",
+  m: "2.5em"
+};
 
-// Box.propTypes = {
-//   color: Proptypes.string,
-//   p: Proptypes.number,
-//   m: Proptypes.number
-// };
+Box.propTypes = {
+  color: Proptypes.string,
+  p: Proptypes.number,
+  m: Proptypes.number
+};
 
 export default Box;
