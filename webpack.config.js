@@ -2,8 +2,8 @@ const fs = require("fs");
 const ExtractTextPlugin = require("extract-text-webpack-plugin");
 const path = require("path");
 const webpack = require("webpack");
-const packageInfo = require("./package.json");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
+const packageInfo = require("./package.json");
 
 const outputPath = path.join(__dirname, "lib");
 const srcPath = path.join(__dirname, "src");
@@ -118,6 +118,11 @@ module.exports = {
             }
           }
         ]
+      },
+      {
+        test: /\.stories\.jsx?$/,
+        loaders: [require.resolve("@storybook/addon-storysource/loader")],
+        enforce: "pre"
       }
     ]
   }
