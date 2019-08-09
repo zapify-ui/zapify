@@ -9,21 +9,18 @@ import React from "react";
 import "./Box.css";
 
 function Box(props) {
-
   const { color, textColor } = props;
 
   const boxPadding = `${props.p}em`,
-        boxMargin  = `${props.m}em`;
-
+    boxMargin = `${props.m}em`;
 
   const _styles = {
-        padding: `${boxPadding}`,
-        margin: `${boxMargin}`,
-        color: `${textColor}`,
-        textColor: {textColor}
-           }
+    padding: `${boxPadding}`,
+    margin: `${boxMargin}`,
+    color: `${textColor}`,
+    textColor: { textColor }
+  };
 
-  
   return (
     <div className={color} style={_styles}>
       This is: {color} with textColor: {textColor}
