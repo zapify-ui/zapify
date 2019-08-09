@@ -1,18 +1,20 @@
-import { addParameters, configure } from "@storybook/react";
+import { addParameters, configure, setAddon } from "@storybook/react";
 import { create } from "@storybook/theming";
+import JSXAddon from "storybook-addon-jsx";
 
+setAddon(JSXAddon);
 const req = require.context("../stories", true, /\.stories\.js$/);
 
 // coral / ocean highlights
 const theme = create({
-  base: "#111",
+  base: "#999",
   colorPrimary: "#f1f1f1",
   colorSecondary: "#111",
   textColor: "#00e9ff",
-  barBg: "#111",
+  barBg: "#666",
   barTextColor: "#f1f1f1",
-  appContentBg: "#444",
-  appBg: "#555"
+  appContentBg: "#fff",
+  appBg: "#555",
 });
 
 function loadStories() {
