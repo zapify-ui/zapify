@@ -9,67 +9,84 @@ import Proptypes from "prop-types";
 import "./Media.css";
       function Media(props) {
         const {typeGet} = props;
-        return <div>{<InnerFunc typeGet={typeGet} />}</div>;
+        const content = props.children;
+        return (
+          <div>
+            {/* {
+              (typeGet === "linear") ? 
+              <Linear value={typeGet} content={content}/> :
+              <Nested value={typeGet} content={content}/>
+            } */}
+            <ABD typeGet={typeGet} content={content}/>
+          </div>
+        )
+      }
+ 
+      function ABD({typeGet, content}) {
+        if(typeGet === "linear"){
+          return <Linear value={typeGet} content={content}/>
+        } else if(typeGet === "nested") {
+         return <Nested value={typeGet} content={content}/>
+        } else {
+          console.log("props error")
+        }
+      }
+      
+
+      const Linear = ({props, content}) => {
+        return (
+                <div className="Media">
+                    <div>
+                         <img
+                             src="https://tinyurl.com/yylsuh97"
+                             alt="Generic placeholder"
+                          />
+                    </div>
+                    <div>
+                         <h3>Media Heading</h3>
+                         <p>{content}</p>
+                    </div>
+                  </div> 
+              )
       }
 
-                  function InnerFunc(props) {
-                    if (props.typeGet === "linear") {
-                      return (
-                            <div className="Media">
-                                  <div>
-                                      <img
-                                        height={64}
-                                        width={64}
-                                        src="https://tinyurl.com/yylsuh97"
-                                        alt="Generic placeholder"
-                                      />
-                                  </div>
-                                   <div>
-                                      <h3>Media Heading</h3>
-                                      <p>{props.children}</p>
-                                  </div>
-                            </div>
-                      );
-                    } else if (props.typeGet === "nested") {
-                      return (
-                          <div>
-                            <div className="Media">
-                              <div>
-                                <img
-                                  height={64}
-                                  width={64}
-                                  src="https://tinyurl.com/yylsuh97"
-                                  alt="Generic placeholder"
-                                />
-                              </div>
-                              <div>
-                                <h3>Outer Paragraph</h3>
-                                <p>happy coding</p>
-                              </div>
-                            </div>
-                            <div style={{ paddingLeft: "10vw" }}>
-                              <div className="Media">
-                                <div>
-                                  <img
-                                    height={64}
-                                    width={64}
-                                    src="https://tinyurl.com/yylsuh97"
-                                    alt="Generic placeholder"
-                                  />
-                                </div>
-                                <div>
-                                  <h3>Inner Paragraph</h3>
-                                  <p>{props.children}</p>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                      );
-                    } else {
-                      console.log("Error");
-                    }
-                    return;
-                  }
+      
+      const Nested = ({props, content}) => {
+        return (
+                  <div>
+                    <div className="Media">
+                      <div>
+                        <img
+                          src="https://tinyurl.com/yylsuh97"
+                          alt="Generic placeholder"
+                        />
+                      </div>
+                      <div>
+                        <h3>Heading 1</h3>
+                        <p>{content}</p>
+                      </div>
+                    </div>
+                    <div style={{ paddingLeft: "10vw" }}>
+                      <div className="Media">
+                        <div>
+                          <img
+                            src="https://tinyurl.com/yylsuh97"
+                            alt="Generic placeholder"
+                          />
+                        </div>
+                        <div>
+                          <h3>Heading 2</h3>
+                          <p>{content}</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+              );
+      }
+
+         
+          
+
 
 Media.propType = {
   typeGet: Proptypes.oneOf(["linear", "nested"])
