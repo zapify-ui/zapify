@@ -1,11 +1,19 @@
-import React, { Component } from "react";
+/* eslint-disable react/destructuring-assignment */
+/* eslint-disable react/button-has-type */
+/* eslint-disable react/prefer-stateless-function */
+import React from "react";
+import Proptypes from "prop-types";
+import "./Button.css";
 
-export default class Button extends Component {
-  render() {
-    return (
-      <button onClick={this.props} type="button">
-        {this.props.children}
-      </button>
-    );
-  }
+function Button(props) {
+  return (
+    <div>
+      <button className={props.color}>{props.children}</button>
+    </div>
+  );
 }
+
+Button.propType = {
+  color: Proptypes.string
+};
+export default Button;
