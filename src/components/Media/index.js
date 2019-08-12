@@ -8,7 +8,7 @@ import React, { Component } from "react";
 import Proptypes from "prop-types";
 import "./Media.css";
       function Media(props) {
-        const {typeGet} = props;
+        const {typeGet, image} = props;
         const content = props.children;
         return (
           <div>
@@ -17,66 +17,78 @@ import "./Media.css";
               <Linear value={typeGet} content={content}/> :
               <Nested value={typeGet} content={content}/>
             } */}
-            <ABD typeGet={typeGet} content={content}/>
+            <Rendering typeGet={typeGet} content={content} image={image}/>
           </div>
         )
       }
  
-      function ABD({typeGet, content}) {
+      function Rendering({typeGet, content, image}) {
         if(typeGet === "linear"){
-          return <Linear value={typeGet} content={content}/>
+          return <Linear value={typeGet} content={content} image={image}/>
         } else if(typeGet === "nested") {
-         return <Nested value={typeGet} content={content}/>
+         return <Nested value={typeGet} content={content} image={image}/>
         } else {
           console.log("props error")
         }
       }
       
 
-      const Linear = ({props, content}) => {
+      const Linear = ({props, content, image}) => {
         return (
-                <div className="Media">
+                <div className="mediaLinear">
+                  <div className="Media">
                     <div>
                          <img
-                             src="https://tinyurl.com/yylsuh97"
-                             alt="Generic placeholder"
+                            src={image}
+                            alt="Generic placeholder"
                           />
                     </div>
                     <div>
-                         <h3>Media Heading</h3>
+                         <h1>Media Heading</h1>
                          <p>{content}</p>
                     </div>
                   </div> 
+                </div>
               )
       }
 
       
-      const Nested = ({props, content}) => {
+      const Nested = ({props, content, image}) => {
         return (
-                  <div>
+                  <div className="mediaNested">
                     <div className="Media">
                       <div>
                         <img
-                          src="https://tinyurl.com/yylsuh97"
+                          src={image}
                           alt="Generic placeholder"
                         />
                       </div>
                       <div>
-                        <h3>Heading 1</h3>
-                        <p>{content}</p>
+                        <h1>Heading 1</h1>
+                        <p>There are many variations of passages of Lorem Ipsum available, 
+                          but the majority have suffered alteration in some form, by injected
+                           humour, or randomised words which don't look even slightly 
+                           believable. If you are going to use a passage of Lorem Ipsum, you
+                            need to be sure there isn't anything embarrassing hidden
+                             in the middle of text. All the Lorem</p>
                       </div>
                     </div>
                     <div style={{ paddingLeft: "10vw" }}>
                       <div className="Media">
                         <div>
                           <img
-                            src="https://tinyurl.com/yylsuh97"
+                            src={image}
                             alt="Generic placeholder"
                           />
                         </div>
                         <div>
-                          <h3>Heading 2</h3>
-                          <p>{content}</p>
+                          <h1>Heading 2</h1>
+                          <p>Contrary to popular belief, Lorem Ipsum is not simply random text. 
+                            It has roots in a piece of classical Latin literature from 45 BC, makin
+                            g it over 2000 years old. Richard McClintock, a Latin professor at 
+                            Hampden-Sydney College in Virginia, looked up one of the more obscure Latin
+                             words, consectetur, from a Lorem Ipsum passage, and going through the 
+                             cites of the word in classical literature,</p>
                         </div>
                       </div>
                     </div>
@@ -89,7 +101,8 @@ import "./Media.css";
 
 
 Media.propType = {
-  typeGet: Proptypes.oneOf(["linear", "nested"])
+  typeGet: Proptypes.oneOf(["linear", "nested"]),
+  image: Proptypes.string
 };
 
 export default Media;
