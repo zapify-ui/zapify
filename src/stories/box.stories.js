@@ -15,5 +15,4 @@ storiesOf("Box", module)
       <Box color="disabled" textColor="black" p={2} m={2.5} />
     </div>
   ))
-
   .add("User Customisation", () => <div />);
