@@ -7,9 +7,10 @@
 import React, { Component } from "react";
 import Proptypes from "prop-types";
 import "./Media.css";
-function Media() {
-  return <div>{<InnerFunc typeGet="nested" />}</div>;
-}
+      function Media(props) {
+        const {typeGet} = props;
+        return <div>{<InnerFunc typeGet={typeGet} />}</div>;
+      }
 
                   function InnerFunc(props) {
                     if (props.typeGet === "linear") {
@@ -43,7 +44,7 @@ function Media() {
                               </div>
                               <div>
                                 <h3>Outer Paragraph</h3>
-                                <p>{props.children}</p>
+                                <p>happy coding</p>
                               </div>
                             </div>
                             <div style={{ paddingLeft: "10vw" }}>
