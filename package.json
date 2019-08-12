@@ -1,6 +1,6 @@
 {
   "name": "zapify-ui",
-  "version": "0.1.9",
+  "version": "0.2.0",
   "private": false,
   "author": "piyush97 <me@piyushmehta.com>",
   "main": "lib/index/index.js",
@@ -9,6 +9,18 @@
       "precommit": "NODE_ENV=production lint-staged"
     }
   },
+  "keywords": [
+    "react",
+    "javascript",
+    "js",
+    "git",
+    "github",
+    "hooks",
+    "components",
+    "react-ui",
+    "zapify",
+    "zapify-ui"
+  ],
   "scripts": {
     "build": "webpack --mode production",
     "build-css": "node-sass-chokidar src/components/ -o src/components/",
