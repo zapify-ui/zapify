@@ -1,5 +1,4 @@
 <h1 align="center">Zapify</h1>
-[![All Contributors](https://img.shields.io/badge/all_contributors-1-orange.svg?style=flat-square)](#contributors)
 <p align="center"><img src="https://i.ibb.co/X23NHw6/a.png" height="100px" alt="a" border="0"></p>
 <h2 align="center">🚀 Blazing fast react Ui library with Hooks 🚀</h2>
 
