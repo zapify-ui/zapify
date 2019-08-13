@@ -53,3 +53,5 @@ You are more than welcome to make contributions to the project! See the  [CONTRI
 
 ## License
 [MIT](http://opensource.org/licenses/MIT)
+
+### Made with ❤️ by @is124 @vinaybiradar1717 @piyush97 for React Community 👨🏻‍💻👩🏻‍💻
