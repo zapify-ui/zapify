@@ -16,13 +16,21 @@
 In the following example, you can see how to import ```ZapBar``` component
 ### With default Props
 
-```html
-<ZapBar />
+```jsx
+import React from 'react';
+import ReactDOM from 'react-dom';
+import ZapBar from 'zapify-ui';
+
+ReactDOM.render(
+<ZapBar />,
+  document.getElementById('app'));
 ```
 
 ### with custom Props
 
-```html
+```jsx
+import ReactDOM from 'react-dom';
+import ZapBar from 'zapify-ui';
     <ZapBar
       color="#f0f0f0"
       linkColor="#692478"
