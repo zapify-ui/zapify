@@ -14,3 +14,23 @@
 
 ## Basic Usage
 In the following example, you can see how to import ```ZapBar``` component
+### With default Props
+
+```html
+<ZapBar />
+```
+
+### with custom Props
+
+```html
+    <ZapBar
+      color="#f0f0f0"
+      linkColor="#692478"
+      links={[
+        { name: "Link 1", url: "www.piyushmehta.com" },
+        { name: "Link 2", url: "www.piyushmehta.com" }
+      ]}
+      logoColor="#be1e6b"
+      title="Brand Name"
+    />
+```
