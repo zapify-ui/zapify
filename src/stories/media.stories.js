@@ -17,6 +17,11 @@ storiesOf("Media", module)
         Latin words, consectetur, from a Lorem Ipsum passage, and going through
         the cites of the word in classical literatur.
       </Media>
-      <Media typeGet="nested" image="https://tinyurl.com/yylsuh97"></Media>
+      <Media 
+        typeGet="nested" 
+        image1="https://tinyurl.com/yylsuh97" 
+        image2="https://tinyurl.com/yylsuh97"
+        >
+        </Media>
     </div>
   ));

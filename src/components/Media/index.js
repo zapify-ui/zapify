@@ -8,25 +8,22 @@ import React, { Component } from "react";
 import Proptypes from "prop-types";
 import "./Media.css";
 function Media(props) {
-  const { typeGet, image } = props;
+  const { typeGet, image, image1, image2 } = props;
   const content = props.children;
   return (
     <div>
-      {/* {
-              (typeGet === "linear") ? 
-              <Linear value={typeGet} content={content}/> :
-              <Nested value={typeGet} content={content}/>
-            } */}
-      <Rendering typeGet={typeGet} content={content} image={image} />
+      <Rendering typeGet={typeGet} content={content} image={image} image1={image1} image2={image2} />
     </div>
   );
 }
 
-function Rendering({ typeGet, content, image }) {
+function Rendering({ typeGet, content, image, image1, image2 }) {
+  console.log({image1})
+  console.log({image2})
   if (typeGet === "linear") {
     return <Linear value={typeGet} content={content} image={image} />;
   } else if (typeGet === "nested") {
-    return <Nested value={typeGet} content={content} image={image} />;
+    return <Nested value={typeGet} content={content} image1={image1} image2={image2} />;
   } else {
     console.log("props error");
   }
@@ -48,12 +45,12 @@ const Linear = ({ props, content, image }) => {
   );
 };
 
-const Nested = ({ props, content, image }) => {
+const Nested = ({ props, content, image1, image2 }) => {
   return (
     <div className="mediaNested">
       <div className="Media">
         <div>
-          <img src={image} alt="Generic placeholder" />
+          <img src={image1} alt="Generic placeholder" />
         </div>
         <div>
           <h1>Heading 1</h1>
@@ -70,7 +67,7 @@ const Nested = ({ props, content, image }) => {
       <div style={{ paddingLeft: "10vw" }}>
         <div className="Media">
           <div>
-            <img src={image} alt="Generic placeholder" />
+            <img src={image2} alt="Generic placeholder" />
           </div>
           <div>
             <h1>Heading 2</h1>
@@ -92,7 +89,9 @@ const Nested = ({ props, content, image }) => {
 
 Media.propType = {
   typeGet: Proptypes.oneOf(["linear", "nested"]),
-  image: Proptypes.string
+  image: Proptypes.string,
+  image1: Proptypes.string,
+  image2: Proptypes.string
 };
 
 export default Media;
