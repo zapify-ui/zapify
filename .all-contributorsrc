@@ -1,0 +1,23 @@
+{
+  "files": [
+    "README.md"
+  ],
+  "imageSize": 100,
+  "commit": false,
+  "contributors": [
+    {
+      "login": "piyush97",
+      "name": "Piyush Mehta",
+      "avatar_url": "https://avatars3.githubusercontent.com/u/18229627?v=4",
+      "profile": "https://piyushmehta.com",
+      "contributions": [
+        "code"
+      ]
+    }
+  ],
+  "contributorsPerLine": 7,
+  "projectName": "zapify",
+  "projectOwner": "zapify-ui",
+  "repoType": "github",
+  "repoHost": "https://github.com"
+}
