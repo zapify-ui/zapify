@@ -34,3 +34,5 @@ In the following example, you can see how to import ```ZapBar``` component
       title="Brand Name"
     />
 ```
+# Contributing
+You are more than welcome to make contributions to the project! See the  [CONTRIBUTING.md](https://github.com/zapify-ui/zapify/blob/master/CONTRIBUTING.md).
