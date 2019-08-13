@@ -19,18 +19,21 @@ In the following example, you can see how to import ```ZapBar``` component
 ```jsx
 import React from 'react';
 import ReactDOM from 'react-dom';
-import ZapBar from 'zapify-ui';
+import {ZapBar} from 'zapify-ui';
 
 ReactDOM.render(
-<ZapBar />,
-  document.getElementById('app'));
+  <ZapBar />,
+  document.getElementById('app')
+);
 ```
 
 ### with custom Props
 
 ```jsx
+import React from 'react';
 import ReactDOM from 'react-dom';
-import ZapBar from 'zapify-ui';
+import {ZapBar} from 'zapify-ui';
+ReactDOM.render(
     <ZapBar
       color="#f0f0f0"
       linkColor="#692478"
@@ -40,8 +43,11 @@ import ZapBar from 'zapify-ui';
       ]}
       logoColor="#be1e6b"
       title="Brand Name"
-    />
+    />,
+  document.getElementById('app')
+);
 ```
+
 ## Contributing
 You are more than welcome to make contributions to the project! See the  [CONTRIBUTING.md](https://github.com/zapify-ui/zapify/blob/master/CONTRIBUTING.md).
 
