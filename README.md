@@ -1,4 +1,5 @@
 <h1 align="center">Zapify</h1>
+[![All Contributors](https://img.shields.io/badge/all_contributors-1-orange.svg?style=flat-square)](#contributors)
 <p align="center"><img src="https://i.ibb.co/X23NHw6/a.png" height="100px" alt="a" border="0"></p>
 <h2 align="center">🚀 Blazing fast react Ui library with Hooks 🚀</h2>
 
@@ -55,3 +56,18 @@ You are more than welcome to make contributions to the project! See the  [CONTRI
 [MIT](http://opensource.org/licenses/MIT)
 
 ### Made with ❤️ by @is124 @vinaybiradar1717 @piyush97 for React Community 👨🏻‍💻👩🏻‍💻
+## Contributors ✨
+
+Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/docs/en/emoji-key)):
+
+<!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
+<!-- prettier-ignore -->
+<table>
+  <tr>
+    <td align="center"><a href="https://github.com/is124"><img src="https://avatars2.githubusercontent.com/u/51227848?v=4" width="100px;" alt="Tilak"/><br /><sub><b>Tilak</b></sub></a><br /><a href="https://github.com/zapify-ui/zapify/commits?author=is124" title="Code">💻</a> <a href="#design-is124" title="Design">🎨</a></td>
+  </tr>
+</table>
+
+<!-- ALL-CONTRIBUTORS-LIST:END -->
+
+This project follows the [all-contributors](https://github.com/all-contributors/all-contributors) specification. Contributions of any kind welcome!
