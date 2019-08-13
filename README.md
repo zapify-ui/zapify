@@ -8,3 +8,50 @@
 [![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/zapify-ui/zapify/blob/Staging/LICENSE) 
 [![npm version](https://badge.fury.io/js/zapify-ui.svg)](https://badge.fury.io/js/zapify-ui)
 [![Netlify Status](https://api.netlify.com/api/v1/badges/71ceb923-c95d-413d-9519-30c7931fc134/deploy-status)](https://app.netlify.com/sites/zapify/deploys)
+![Dependencies](https://david-dm.org/zapify-ui/zapify.svg)
+## Installation
+``` npm install zapify-ui```
+
+## Basic Usage
+In the following example, you can see how to import ```ZapBar``` component
+### With default Props
+
+```jsx
+import React from 'react';
+import ReactDOM from 'react-dom';
+import {ZapBar} from 'zapify-ui';
+
+ReactDOM.render(
+  <ZapBar />,
+  document.getElementById('app')
+);
+```
+
+### with custom Props
+
+```jsx
+import React from 'react';
+import ReactDOM from 'react-dom';
+import {ZapBar} from 'zapify-ui';
+ReactDOM.render(
+    <ZapBar
+      color="#f0f0f0"
+      linkColor="#692478"
+      links={[
+        { name: "Link 1", url: "www.piyushmehta.com" },
+        { name: "Link 2", url: "www.piyushmehta.com" }
+      ]}
+      logoColor="#be1e6b"
+      title="Brand Name"
+    />,
+  document.getElementById('app')
+);
+```
+
+## Contributing
+You are more than welcome to make contributions to the project! See the  [CONTRIBUTING.md](https://github.com/zapify-ui/zapify/blob/master/CONTRIBUTING.md).
+
+## License
+[MIT](http://opensource.org/licenses/MIT)
+
+### Made with ❤️ by @is124 @vinaybiradar1717 @piyush97 for React Community 👨🏻‍💻👩🏻‍💻
