@@ -10,6 +10,8 @@
 [![npm version](https://badge.fury.io/js/zapify-ui.svg)](https://badge.fury.io/js/zapify-ui)
 [![Netlify Status](https://api.netlify.com/api/v1/badges/71ceb923-c95d-413d-9519-30c7931fc134/deploy-status)](https://app.netlify.com/sites/zapify/deploys)
 ![Dependencies](https://david-dm.org/zapify-ui/zapify.svg)
+[![All Contributors](img.shields.io/badge/all_contributors-1-orange.svg?style=flat-square)](#contributors)
+
 ## Installation
 ``` npm install zapify-ui```
 
