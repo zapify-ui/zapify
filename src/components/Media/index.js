@@ -94,4 +94,11 @@ Media.propType = {
   image2: Proptypes.string
 };
 
+Media.defaultProps = {
+  typeGet: Proptypes.oneOf(["linear", "nested"]),
+  image: "https://tinyurl.com/yylsuh97",
+  image1: "https://tinyurl.com/yylsuh97",
+  image2: "https://tinyurl.com/yylsuh97"
+}
+
 export default Media;
