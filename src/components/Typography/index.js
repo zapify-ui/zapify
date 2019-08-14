@@ -15,7 +15,6 @@ function Typography(props) {
       return <h4 className="typography">{children}</h4>;
     case "h5":
       return <h5 className="typography">{children}</h5>;
-
     default:
       return <p className="typography">{children}</p>;
   }
