@@ -13,10 +13,5 @@ exports[`box default test case 1`] = `
       },
     }
   }
->
-  This is: 
-  Primary
-   with textColor: 
-  white
-</div>
+/>
 `;
