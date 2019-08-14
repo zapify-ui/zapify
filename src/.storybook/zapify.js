@@ -9,7 +9,7 @@ export default create({
   appBg: "white",
   appContentBg: "white",
   appBorderColor: "grey",
-  appBorderRadius: 50,
+  appBorderRadius: 3,
 
   // Typography
   fontBase: '"Open Sans", sans-serif',
@@ -28,10 +28,9 @@ export default create({
   inputBg: "white",
   inputBorder: "silver",
   inputTextColor: "black",
-  inputBorderRadius: 50,
+  inputBorderRadius: 3,
 
   brandTitle: "Zapify-ui",
   brandUrl: "https://zapify.netlify.com",
-  brandImage:
-    "https://camo.githubusercontent.com/56702c11ebd0c8817ee8d95b1e45022b97083b8a/68747470733a2f2f692e6962622e636f2f5832334e4877362f612e706e67"
+  brandImage: "https://i.ibb.co/hdsdzq7/ms-icon-144x144.png"
 });
