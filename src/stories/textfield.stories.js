@@ -14,4 +14,13 @@ storiesOf("TextField", module)
     <TextField placeholderText="Color Customized" color="silver">
       Input Hook with custom placeholder
     </TextField>
+  ))
+  .addWithJSX("Input Hook with custom backgroundColor", () => (
+    <TextField
+      placeholderText="Color Customized"
+      color="white"
+      backgroundColor="teal"
+    >
+      Input Hook with custom placeholder
+    </TextField>
   ));

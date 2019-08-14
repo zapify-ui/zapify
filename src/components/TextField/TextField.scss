@@ -1,25 +1,32 @@
 @import "../../styles/ColorSchema.scss";
 
-.input {
-  width: 95%;
-  height: 35px;
-  padding-left: 10px;
-  border: none;
-  border-radius: 5px;
-  margin-bottom: 20px;
-  background: grey;
+input {
+  display: inline-block;
   font-family: $zapFont;
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  padding: 20px 20px 20px 26px;
+  border: 1px solid;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+  font-size: 16px;
+  -o-text-overflow: clip;
+  text-overflow: clip;
+  background: rgba(252, 252, 252, 1);
+  -webkit-box-shadow: 2px 2px 2px 0 rgba(0, 0, 0, 0.2) inset;
+  box-shadow: 2px 2px 2px 0 rgba(0, 0, 0, 0.2) inset;
+  outline: none;
 }
 ::placeholder {
-  color: white;
+  color: black;
 }
+
 label {
-  font-weight: 100;
+  font-weight: 800;
   text-align: left;
-  margin-left: 10px;
   font-family: $zapFont;
-  text-transform: uppercase;
-  font-size: 13px;
+  font-size: 12.5px;
   padding-left: 0px;
   padding-bottom: 2px;
   display: block;

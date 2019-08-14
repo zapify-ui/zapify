@@ -10,6 +10,10 @@ import "./TextField.css";
 function TextField(props) {
   const [input, setInput] = useState("");
   const styles = { color: props.color };
+  const styleForInput = {
+    backgroundColor: props.backgroundColor,
+    color: props.color
+  };
   const handleChange = e => {
     e.preventDefault();
     setInput(e.target.value);
@@ -17,15 +21,16 @@ function TextField(props) {
   const { placeholderText } = props;
   return (
     <div>
-      <label style={styles}>{props.children}</label>
       <input
+        style={styleForInput}
         className="input"
         type="text"
         name="text"
         onChange={handleChange}
         value={input}
         placeholder={placeholderText}
-      />
+      />{" "}
+      <label style={styles}>{props.children}</label>
     </div>
   );
 }
