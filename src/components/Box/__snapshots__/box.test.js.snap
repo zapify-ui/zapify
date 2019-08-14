@@ -1,0 +1,22 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`box default test case 1`] = `
+<div
+  className="Primary"
+  style={
+    Object {
+      "color": "white",
+      "margin": "2.5em",
+      "padding": "2em",
+      "textColor": Object {
+        "textColor": "white",
+      },
+    }
+  }
+>
+  This is: 
+  Primary
+   with textColor: 
+  white
+</div>
+`;
