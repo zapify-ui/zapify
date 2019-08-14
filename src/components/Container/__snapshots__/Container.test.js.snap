@@ -1,0 +1,14 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Container tests 1`] = `
+<div>
+  <div
+    style={
+      Object {
+        "backgroundColor": "#F9690E",
+        "height": "100vh",
+      }
+    }
+  />
+</div>
+`;
