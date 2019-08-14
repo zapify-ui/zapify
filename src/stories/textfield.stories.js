@@ -1,10 +1,12 @@
 /* eslint-disable import/no-extraneous-dependencies */
 
 import React from "react";
-import { storiesOf } from "@storybook/react";
+import { storiesOf, addDecorator } from "@storybook/react";
+import { withInfo } from "@storybook/addon-info";
 import TextField from "../components/TextField";
 
 storiesOf("TextField", module)
+  .addDecorator(withInfo)
   .addWithJSX("Input Hook with custom placeholder", () => (
     <TextField placeholderText="PlaceHolder Customized">
       Input Hook with custom placeholder
