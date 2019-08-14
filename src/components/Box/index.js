@@ -21,13 +21,7 @@ function Box(props) {
     textColor: { textColor }
   };
 
-  return (
-    <div className={color} style={_styles}>
-      <Typography>
-        This is: {color} with textColor: {textColor}
-      </Typography>
-    </div>
-  );
+  return <div className={color} style={_styles} />;
 }
 
 Box.defaultProps = {
