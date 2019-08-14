@@ -10,9 +10,8 @@ import "./Box.css";
 
 function Box(props) {
   const { color, textColor } = props;
-
-  const boxPadding = `${props.p}em`,
-    boxMargin = `${props.m}em`;
+  const boxPadding = `${props.p}em`;
+  const boxMargin = `${props.m}em`;
 
   const _styles = {
     padding: `${boxPadding}`,
@@ -21,11 +20,7 @@ function Box(props) {
     textColor: { textColor }
   };
 
-  return (
-    <div className={color} style={_styles}>
-      This is: {color} with textColor: {textColor}
-    </div>
-  );
+  return <div className={color} style={_styles} />;
 }
 
 Box.defaultProps = {
