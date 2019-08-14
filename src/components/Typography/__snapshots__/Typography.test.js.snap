@@ -3,6 +3,11 @@
 exports[`Container tests 1`] = `
 <h5
   className="typography"
+  style={
+    Object {
+      "color": "#fff",
+    }
+  }
 >
   Zapify Ui Text
 </h5>
