@@ -2,107 +2,109 @@
 
 * {
   box-sizing: border-box;
+  justify-content: center;
+  text-align: center;
 }
 
 .Card {
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    min-height: 500px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  min-height: 30px;
 }
 
-.Card p {
-    min-height: 300px;
-    padding: 0 15px;
-    text-align: left;
-    margin: 0px;
+// .Card-title {
+//   width: 75%;
+//   background-color: yellow;
+// }
+button {
+  width: 80%;
+  height: 50px;
+  border: none;
+  border-radius: 15px;
+  padding: 12px 18px;
+  font-size: 16px;
+  text-transform: uppercase;
+  cursor: pointer;
+  color: white;
+  background-color: #2597f3;
+  box-shadow: 0 0 4px #999;
+  outline: none;
+}
+.Card-title {
+  width: 75%;
+  background-color: red;
+}
+
+.column p {
+  min-height: 300px;
+  padding: 0 15px;
+  text-align: left;
+  margin: 0px;
 }
 .Card-detail {
-    padding: 16px;
-    text-align: center;
-    background-color: #f1f1f1;
-    border-radius: 7%;
-    width: 280px;
-    height: 430px;
-    margin: 50px 80px;
-    box-shadow: 2px 4px 8px 0 rgba(228, 212, 212, 0.5);
+  padding: 16px;
+  text-align: center;
+  background-color: #f1f1f1;
+  border-radius: 7%;
+  width: 280px;
+  height: 360px;
+  margin: 50px 80px;
+  box-shadow: 2px 4px 8px 0 rgba(228, 212, 212, 0.5);
 }
 
-
 .column {
-    float: left;
-    width: 25%;
-    // height: 700px;
-  }
+  float: left;
+  width: 25%;
+  // height: 700px;
+}
 
-  .row {margin: 0 -5px;}
+.row {
+  margin: 0 -5px;
+}
 
-  /* Clear floats after the columns */
-  .row:after {
-    content: "";
-    display: table;
-    clear: both;
-  }
-  
-  /* Responsive columns */
-  @media screen and (max-width: 1200px) {
-    .column {
-      width: 33.33%;
-      display: block;
-      margin-bottom: 20px;
-    }
-  }
-  @media screen and (max-width: 1000px) {
-    .column {
-      width: 50%;
-      display: block;
-      margin-bottom: 20px;
-    }
-  }
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
 
-  @media screen and (max-width: 600px) {
-    .column {
-      width: 100%;
-      display: block;
-      margin-bottom: 20px;
-    }
+/* Responsive columns */
+@media screen and (max-width: 1200px) {
+  .column {
+    width: 33.33%;
+    display: block;
+    margin-bottom: 20px;
   }
-  
-  // /* Style the counter cards */
-  // .Card {
-    
-  //   padding: 16px;
-  //   text-align: center;
-  //   background-color: #f1f1f1;
-  // }
-    
-  
+}
+@media screen and (max-width: 1000px) {
+  .column {
+    width: 50%;
+    display: block;
+    margin-bottom: 20px;
+  }
+}
 
-  .Card-button {
-    background-position: center;
-    transition: background 0.8s;
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
   }
-  .Card-button:hover {
-    background: #6eb9f7 radial-gradient(circle, transparent 1%, #47a7f5 1%) center/15000%;
-  }
-  .Card-button:active {
-    background-color: #6eb9f7;
-    background-size: 100%;
-    transition: background 0s;
-  }
-  
-  /* Button style */
-  button {
-    width: 80%;
-    height: 50px;
-    border: none;
-    border-radius: 15px;
-    padding: 12px 18px;
-    font-size: 16px;
-    text-transform: uppercase;
-    cursor: pointer;
-    color: white;
-    background-color: #2597f3;
-    box-shadow: 0 0 4px #999;
-    outline: none;
-  }
+}
+
+.Card-button {
+  background-position: center;
+  transition: background 0.8s;
+}
+.Card-button:hover {
+  background: #6eb9f7 radial-gradient(circle, transparent 1%, #47a7f5 1%) center/15000%;
+}
+.Card-button:active {
+  background-color: #6eb9f7;
+  background-size: 100%;
+  transition: background 0s;
+}
+
+/* Button style */

@@ -9,3 +9,4 @@ export { default as Grid } from "./Grid";
 export { default as Media } from "./Media";
 export { default as Switch } from "./Switch";
 export { default as ZapBar } from "./ZapBar";
+export { default as Card1 } from "./Card1";
