@@ -7,71 +7,98 @@
 import React, { Component } from "react";
 import Proptypes from "prop-types";
 import "./Media.css";
-function Media() {
-  return <div>{<InnerFunc typeGet="nested" />}</div>;
+function Media(props) {
+  const { typeGet, image, image1, image2 } = props;
+  const content = props.children;
+  return (
+    <div>
+      <Rendering typeGet={typeGet} content={content} image={image} image1={image1} image2={image2} />
+    </div>
+  );
 }
 
-function InnerFunc(props) {
-  if (props.typeGet === "linear") {
-    return (
+function Rendering({ typeGet, content, image, image1, image2 }) {
+  console.log({image1})
+  console.log({image2})
+  if (typeGet === "linear") {
+    return <Linear value={typeGet} content={content} image={image} />;
+  } else if (typeGet === "nested") {
+    return <Nested value={typeGet} content={content} image1={image1} image2={image2} />;
+  } else {
+    console.log("props error");
+  }
+}
+
+const Linear = ({ props, content, image }) => {
+  return (
+    <div className="mediaLinear">
       <div className="Media">
         <div>
-          <img
-            height={64}
-            width={64}
-            src="https://tinyurl.com/yylsuh97"
-            alt="Generic placeholder"
-          />
+          <img src={image} alt="Generic placeholder" />
         </div>
         <div>
-          <h3>Media Heading</h3>
-          <p>{props.children}</p>
+          <h1>Media Heading</h1>
+          <p>{content}</p>
         </div>
       </div>
-    );
-  } else if (props.typeGet === "nested") {
-    return (
-      <div>
+    </div>
+  );
+};
+
+const Nested = ({ props, content, image1, image2 }) => {
+  return (
+    <div className="mediaNested">
+      <div className="Media">
+        <div>
+          <img src={image1} alt="Generic placeholder" />
+        </div>
+        <div>
+          <h1>Heading 1</h1>
+          <p>
+            There are many variations of passages of Lorem Ipsum available, but
+            the majority have suffered alteration in some form, by injected
+            humour, or randomised words which don't look even slightly
+            believable. If you are going to use a passage of Lorem Ipsum, you
+            need to be sure there isn't anything embarrassing hidden in the
+            middle of text. All the Lorem
+          </p>
+        </div>
+      </div>
+      <div style={{ paddingLeft: "10vw" }}>
         <div className="Media">
           <div>
-            <img
-              height={64}
-              width={64}
-              src="https://tinyurl.com/yylsuh97"
-              alt="Generic placeholder"
-            />
+            <img src={image2} alt="Generic placeholder" />
           </div>
           <div>
-            <h3>Outer Paragraph</h3>
-            <p>{props.children}</p>
-          </div>
-        </div>
-        <div style={{ paddingLeft: "10vw" }}>
-          <div className="Media">
-            <div>
-              <img
-                height={64}
-                width={64}
-                src="https://tinyurl.com/yylsuh97"
-                alt="Generic placeholder"
-              />
-            </div>
-            <div>
-              <h3>Inner Paragraph</h3>
-              <p>{props.children}</p>
-            </div>
+            <h1>Heading 2</h1>
+            <p>
+              Contrary to popular belief, Lorem Ipsum is not simply random text.
+              It has roots in a piece of classical Latin literature from 45 BC,
+              makin g it over 2000 years old. Richard McClintock, a Latin
+              professor at Hampden-Sydney College in Virginia, looked up one of
+              the more obscure Latin words, consectetur, from a Lorem Ipsum
+              passage, and going through the cites of the word in classical
+              literature,
+            </p>
           </div>
         </div>
       </div>
-    );
-  } else {
-    console.log("Error");
-  }
-  return;
-}
+    </div>
+  );
+};
 
 Media.propType = {
-  typeGet: Proptypes.oneOf(["linear", "nested"])
+  typeGet: Proptypes.oneOf(["linear", "nested"]),
+  image: Proptypes.string,
+  image1: Proptypes.string,
+  image2: Proptypes.string
 };
+
+Media.defaultProps = {
+  typeGet: Proptypes.oneOf(["linear", "nested"]),
+  image: "https://tinyurl.com/yylsuh97",
+  image1: "https://tinyurl.com/yylsuh97",
+  image2: "https://tinyurl.com/yylsuh97"
+}
 
 export default Media;
