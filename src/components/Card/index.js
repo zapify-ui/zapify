@@ -23,7 +23,7 @@ function Card(props) {
                            dolores eos qui ratione voluptatem sequi nesciunt. 
                            Neque porro quisquam est, qui dolorem ipsum quia
                             dolor sit amet,</p>
-                        <button>Click </button>
+                        <button className="Card-button">Click </button>
                 </div>
            </div>
            <div className="column"> 
@@ -39,7 +39,7 @@ function Card(props) {
                            dolores eos qui ratione voluptatem sequi nesciunt. 
                            Neque porro quisquam est, qui dolorem ipsum quia
                             dolor sit amet,</p>
-                        <button>Click </button>
+                        <button className="Card-button">Click </button>
                 </div>
            </div>
            <div className="column"> 
@@ -55,7 +55,7 @@ function Card(props) {
                            dolores eos qui ratione voluptatem sequi nesciunt. 
                            Neque porro quisquam est, qui dolorem ipsum quia
                             dolor sit amet,</p>
-                        <button>Click </button>
+                        <button  className="Card-button">Click </button>
                 </div>
            </div>
            <div className="column"> 
@@ -71,7 +71,7 @@ function Card(props) {
                            dolores eos qui ratione voluptatem sequi nesciunt. 
                            Neque porro quisquam est, qui dolorem ipsum quia
                             dolor sit amet,</p>
-                        <button>Click </button>
+                        <button className="Card-button">Click </button>
                 </div>
            </div>
         </div>
