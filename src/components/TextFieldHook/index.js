@@ -9,21 +9,22 @@ import "./TextFieldHook.css";
 
 function TextFieldHook(props) {
   const [input, setInput] = useState("");
-
+  const styles = { color: props.color };
   const handleChange = e => {
     e.preventDefault();
     setInput(e.target.value);
   };
+  const { placeholderText } = props;
   return (
     <div>
-      <label>{props.children}</label>
+      <label style={styles}>{props.children}</label>
       <input
         className="input"
         type="text"
         name="text"
         onChange={handleChange}
         value={input}
-        placeholder="hook input"
+        placeholder={placeholderText}
       />
     </div>
   );
