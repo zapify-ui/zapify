@@ -16,11 +16,42 @@
     border-radius: 7%;
     width: 280px;
     height: 400px;
+    margin: 50px 80px;
+    box-shadow: 2px 4px 8px 0 rgba(228, 212, 212, 0.5);
 }
 
 
 .column {
     float: left;
     width: 25%;
-    margin: 100px 100px;
+  }
+
+  .row {margin: 0 -5px;}
+
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Responsive columns */
+  @media screen and (max-width: 600px) {
+    .column {
+      width: 100%;
+      display: block;
+      margin-bottom: 20px;
+    }
+  }
+  
+  /* Style the counter cards */
+  .card {
+    
+    padding: 16px;
+    text-align: center;
+    background-color: #f1f1f1;
+  }
+
+  .Card-button {
+      background-color: yellow;
   }
