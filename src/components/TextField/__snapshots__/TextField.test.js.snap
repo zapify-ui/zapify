@@ -1,0 +1,30 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Container tests 1`] = `
+<div>
+  <input
+    className="input"
+    name="text"
+    onChange={[Function]}
+    placeholder="Color Customized"
+    style={
+      Object {
+        "backgroundColor": "teal",
+        "color": "white",
+      }
+    }
+    type="text"
+    value=""
+  />
+   
+  <label
+    style={
+      Object {
+        "color": "white",
+      }
+    }
+  >
+    Input Hook with custom placeholder
+  </label>
+</div>
+`;
