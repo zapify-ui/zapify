@@ -1,7 +1,6 @@
 import React from "react";
 import renderer from "react-test-renderer";
 import Box from "./index";
-import Typography from "../Typography";
 
 test("box default test case", () => {
   const component = renderer.create(<Box color="Primary" p={2} m={2.5} />);
