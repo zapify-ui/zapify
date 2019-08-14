@@ -7,7 +7,6 @@
 import Proptypes from "prop-types";
 import React from "react";
 import "./Box.css";
-import Typography from "../Typography";
 
 function Box(props) {
   const { color, textColor } = props;
