@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Button default test case 1`] = `
+<div>
+  <button
+    className="primaryButton"
+  >
+     Hello 
+  </button>
+</div>
+`;
