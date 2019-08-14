@@ -11,6 +11,5 @@ storiesOf("Typography", module)
   .addWithJSX("with h1", () => <Typography variant="h1">Hello</Typography>)
   .addWithJSX("with h2", () => <Typography variant="h2">Hello</Typography>)
   .addWithJSX("with h3", () => <Typography variant="h3">Hello</Typography>)
-  .addWithJSX("with h4", () => <Typography variant="h3">Hello</Typography>)
-  .addWithJSX("with h5", () => <Typography variant="h3">Hello</Typography>)
-  .addWithJSX("Without h1", () => <Typography>Hello</Typography>);
+  .addWithJSX("with h4", () => <Typography variant="h4">Hello</Typography>)
+  .addWithJSX("with h5", () => <Typography variant="h5">Hello</Typography>);
