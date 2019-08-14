@@ -2,16 +2,16 @@
 
 import React from "react";
 import { storiesOf } from "@storybook/react";
-import TextFieldHook from "../components/TextFieldHook";
+import TextField from "../components/TextField";
 
-storiesOf("TextFieldHook", module)
+storiesOf("TextField", module)
   .addWithJSX("Input Hook with custom placeholder", () => (
-    <TextFieldHook placeholderText="PlaceHolder Customized">
+    <TextField placeholderText="PlaceHolder Customized">
       Input Hook with custom placeholder
-    </TextFieldHook>
+    </TextField>
   ))
   .addWithJSX("Input Hook with custom color", () => (
-    <TextFieldHook placeholderText="Color Customized" color="silver">
+    <TextField placeholderText="Color Customized" color="silver">
       Input Hook with custom placeholder
-    </TextFieldHook>
+    </TextField>
   ));
