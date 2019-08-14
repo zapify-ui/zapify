@@ -9,7 +9,8 @@ import "./Card.css";
 
 function Card(props) {
     return(
-        <div className="Card row">
+       <div className="Card">
+            <div className="row">
            <div className="column"> 
                 <div className="Card-detail">
                         <h1>Title</h1>
@@ -75,6 +76,7 @@ function Card(props) {
                 </div>
            </div>
         </div>
+       </div>
     )
 }
 
