@@ -5,12 +5,12 @@ import { storiesOf } from "@storybook/react";
 import TextFieldHook from "../components/TextFieldHook";
 
 storiesOf("TextFieldHook", module)
-  .add("Input Hook with custom placeholder", () => (
+  .addWithJSX("Input Hook with custom placeholder", () => (
     <TextFieldHook placeholderText="PlaceHolder Customized">
       Input Hook with custom placeholder
     </TextFieldHook>
   ))
-  .add("Input Hook with custom color", () => (
+  .addWithJSX("Input Hook with custom color", () => (
     <TextFieldHook placeholderText="Color Customized" color="silver">
       Input Hook with custom placeholder
     </TextFieldHook>
