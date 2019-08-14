@@ -1,0 +1,27 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Media default test case 1`] = `
+<div>
+  <div
+    className="mediaLinear"
+  >
+    <div
+      className="Media"
+    >
+      <div>
+        <img
+          alt="Generic placeholder"
+        />
+      </div>
+      <div>
+        <h1>
+          Media Heading
+        </h1>
+        <p>
+          Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy.
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+`;

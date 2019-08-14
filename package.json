@@ -44,6 +44,12 @@
     "storybook": "start-storybook -p 9001 -c src/.storybook",
     "watch-css": "npm run build-css && node-sass-chokidar src/components/ -o src/components/ --watch --recursive"
   },
+  "jest": {
+    "moduleNameMapper": {
+      "\\.(css|less|sass|scss)$": "<rootDir>/__mocks__/styleMock.js",
+      "\\.(gif|ttf|eot|svg)$": "identity-obj-proxy"
+    }
+  },
   "storybook-deployer": {
     "gitUsername": "piyush97",
     "gitEmail": "me@piyushmehta.com",
@@ -87,6 +93,7 @@
     "eslint-watch": "^6.0.0",
     "extract-text-webpack-plugin": "^4.0.0-beta.0",
     "husky": "^1.2.0",
+    "identity-obj-proxy": "^3.0.0",
     "jest": "^24.8.0",
     "lint-staged": "^8.1.0",
     "mini-css-extract-plugin": "^0.8.0",
@@ -96,9 +103,9 @@
     "prettier": "^1.18.2",
     "pretty-quick": "^1.11.1",
     "prop-types": "^15.7.2",
-    "react": "^16.8.6",
-    "react-dom": "^16.8.6",
-    "react-test-renderer": "^16.9.0",
+    "react": "^16.8.3",
+    "react-dom": "^16.8.3",
+    "react-test-renderer": "^16.8.6",
     "sass-loader": "^7.1.0",
     "storybook-addon-jsx": "^7.1.5",
     "style-loader": "^1.0.0",
