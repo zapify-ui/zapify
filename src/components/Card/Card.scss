@@ -1,0 +1,26 @@
+@import "../../styles/ColorSchema.scss";
+
+.Card {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.Card p {
+    min-height: 300px;
+    padding: 0 15px;
+    text-align: left;
+}
+.Card-detail {
+    background-color: silver;
+    border-radius: 7%;
+    width: 280px;
+    height: 400px;
+}
+
+
+.column {
+    float: left;
+    width: 25%;
+    margin: 100px 100px;
+  }
