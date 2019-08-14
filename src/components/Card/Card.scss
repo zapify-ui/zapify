@@ -18,7 +18,9 @@
     margin: 0px;
 }
 .Card-detail {
-    background-color: white;
+    padding: 16px;
+    text-align: center;
+    background-color: #f1f1f1;
     border-radius: 7%;
     width: 280px;
     height: 430px;
@@ -51,13 +53,13 @@
     }
   }
   
-  /* Style the counter cards */
-  .card {
+  // /* Style the counter cards */
+  // .Card {
     
-    padding: 16px;
-    text-align: center;
-    background-color: #f1f1f1;
-  }
+  //   padding: 16px;
+  //   text-align: center;
+  //   background-color: #f1f1f1;
+  // }
     
   
 
