@@ -13,6 +13,7 @@
 [![GitHub stars](https://img.shields.io/github/stars/zapify-ui/zapify)](https://github.com/zapify-ui/zapify/stargazers)
 [![GitHub forks](https://img.shields.io/github/forks/zapify-ui/zapify)](https://github.com/zapify-ui/zapify/network)
 [![Storybook](https://cdn.jsdelivr.net/gh/storybookjs/brand@master/badge/badge-storybook.svg)](https://zapify-ui.github.io/zapify)
+[![Maintainability](https://api.codeclimate.com/v1/badges/c42c480d78c0db5ca8e2/maintainability)](https://codeclimate.com/github/zapify-ui/zapify/maintainability)
 
 ## Installation
 ``` npm install zapify-ui```
