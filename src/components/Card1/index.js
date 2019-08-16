@@ -8,19 +8,26 @@ import React from "react";
 import "./Card1.css";
 import Typography from "../Typography";
 function Card1() {
-    return (
-        <div className="container">
-            <div className="card">
-               <div className="text"> <Typography color="black" className="text">
-                   dsadsadjksabdjhasvdjhsaghjdgyjasgdhjasghdgashdgahsdkasjdlihasukdhskajhdkjsahkjdhsajkd
-                        </Typography></div></div>
-            <div className="title_rectangle">            <div className="Title__text">Hello</div>
-            </div>
-
-            <div className="button"><div className="Button_text">Yaha ayega</div></div>
-
+  return (
+    <div className="container">
+      <div className="card">
+        <div className="text">
+          {" "}
+          <Typography color="black" className="text">
+            dsadsadjksabdjhasvdjhsaghjdgyjasgdhjasghdgashdgahsdkasjdlihasukdhskajhdkjsahkjdhsajkd
+          </Typography>
         </div>
-    )
+      </div>
+      <div className="title_rectangle">
+        {" "}
+        <div className="Title__text">Hello</div>
+      </div>
+
+      <div className="button">
+        <div className="Button_text">Yaha ayega</div>
+      </div>
+    </div>
+  );
 }
 
 export default Card1;
