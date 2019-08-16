@@ -2,11 +2,9 @@
 
 import React from "react";
 import { storiesOf, addDecorator } from "@storybook/react";
-import { withInfo } from "@storybook/addon-info";
 import Typography from "../components/Typography";
 
 storiesOf("Typography", module)
-  .addDecorator(withInfo)
   .addWithJSX("with default Props", () => (
     <Typography>With Default Props</Typography>
   ))
