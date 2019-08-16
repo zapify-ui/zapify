@@ -1,0 +1,82 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Container tests 1`] = `
+<div
+  id="navigation-bar"
+>
+  <nav
+    style={
+      Object {
+        "backgroundColor": "#f0f0f0",
+      }
+    }
+  >
+    <ul>
+      <li>
+         
+        <img
+          alt="logoImage"
+          src="https://camo.githubusercontent.com/56702c11ebd0c8817ee8d95b1e45022b97083b8a/68747470733a2f2f692e6962622e636f2f5832334e4877362f612e706e67"
+          style={
+            Object {
+              "height": "3em",
+              "margin": "-2em 0em -0.8em 0.2em",
+            }
+          }
+        />
+        <a
+          href="#"
+          id="logo"
+          style={
+            Object {
+              "color": "#be1e6b",
+            }
+          }
+        >
+          Brand Name
+        </a>
+      </li>
+      <li
+        className="link"
+        style={
+          Object {
+            "float": "right ",
+            "padding": ".29em .5em .5em .5em",
+          }
+        }
+      >
+        <a
+          href="www.piyushmehta.com"
+          style={
+            Object {
+              "color": "#692478",
+            }
+          }
+        >
+          Custom Link 2
+        </a>
+      </li>
+      <li
+        className="link"
+        style={
+          Object {
+            "float": "right ",
+            "padding": ".29em .5em .5em .5em",
+          }
+        }
+      >
+        <a
+          href="www.piyushmehta.com"
+          style={
+            Object {
+              "color": "#692478",
+            }
+          }
+        >
+          Custom Link 1
+        </a>
+      </li>
+    </ul>
+  </nav>
+</div>
+`;

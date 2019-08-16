@@ -29,6 +29,7 @@ function ZapBar(props) {
 
   const _linkList = links.map(({ name, url }) => (
     <li
+      key={name}
       style={{ float: "right ", padding: ".29em .5em .5em .5em" }}
       className="link"
     >

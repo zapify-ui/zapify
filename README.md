@@ -9,7 +9,7 @@
 [![npm version](https://badge.fury.io/js/zapify-ui.svg)](https://badge.fury.io/js/zapify-ui)
 [![Netlify Status](https://api.netlify.com/api/v1/badges/71ceb923-c95d-413d-9519-30c7931fc134/deploy-status)](https://app.netlify.com/sites/zapify/deploys)
 ![Dependencies](https://david-dm.org/zapify-ui/zapify.svg)
-[![All Contributors](https://img.shields.io/badge/all_contributors-3-orange.svg?style=flat-square)](#contributors)
+[![All Contributors](https://img.shields.io/badge/all_contributors-5-green.svg?style=flat-square)](#contributors)
 [![GitHub stars](https://img.shields.io/github/stars/zapify-ui/zapify)](https://github.com/zapify-ui/zapify/stargazers)
 [![GitHub forks](https://img.shields.io/github/forks/zapify-ui/zapify)](https://github.com/zapify-ui/zapify/network)
 [![Storybook](https://cdn.jsdelivr.net/gh/storybookjs/brand@master/badge/badge-storybook.svg)](https://zapify-ui.github.io/zapify)

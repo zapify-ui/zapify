@@ -1,0 +1,14 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Container tests 1`] = `
+<h5
+  className="typography"
+  style={
+    Object {
+      "color": "#fff",
+    }
+  }
+>
+  Zapify Ui Text
+</h5>
+`;
