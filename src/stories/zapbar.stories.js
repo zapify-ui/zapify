@@ -2,12 +2,10 @@
 
 import React from "react";
 import { storiesOf, addDecorator } from "@storybook/react";
-import { withInfo } from "@storybook/addon-info";
 
 import ZapBar from "../components/ZapBar";
 
 storiesOf("ZapBar", module)
-  .addDecorator(withInfo)
   .addWithJSX("With Default Props", () => <ZapBar />)
   .addWithJSX("With User Customisation", () => (
     <ZapBar
