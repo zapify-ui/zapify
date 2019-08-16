@@ -1,5 +1,4 @@
-<h1 align="center">Zapify</h1>
-<p align="center"><img src="https://i.ibb.co/X23NHw6/a.png" height="100px" alt="a" border="0"></p>
+<p align="center"><img src="https://lh3.googleusercontent.com/jq_CHT41OENz4e7SMdLSdgHavhD5JKpJHYagvJyx4uqMgq24o63Fatt_iJViaBfjHzFTuMtlEq1fD_LMVhVMR9HV1LheXYgqADZMgLVSLybSFjB9q1o2m5Ei6RGFMJLeF5mE9nlrfMA6mXxpn0ExZYF0XeC5EsgVfeNC6QErCWEOFwmGEilfY8QAUR2-eHWgyLA0vKteHf6a0bpfk5VKem_tbdjSQ1iV5qlh98518iZ6P3Exghkb-OyJP4b0YX_LmAF5loOSSImVLvIjF-0R0jY2By070sC1xyr2RrFdu9g4cLDpfQCsqkTO_oV3-lX-zZbUqO1mobqs9Xr0R7NhXI-_JBBV5vYe_Ct8bfdQKMEsUpbjnDAAZIrlFULyffAnO7gm3FyZeLzdikTQLFaQItKpvlN4k6NHFa3_aZen9G-_jLvrAxzV9aKOjEdjMJ_rnPeTcvuOUTLgh_VkXDsfVjfl77E9if7Wc6gqrGrLgJZJHjai5IfzlVJ8td8d_wEawyIToedsKIB0RfAwLpC1--Nx71ejf_kaszzFVT49pzEyyqnDvOI-GDiALc3ca77VZV5DDy5wVpHjwPmYZ0EEJb3JdCfHjBvRr9E-HkZGUwY24FAzPrr3L3-smkY-tw=w2560-h978" height="100px" alt="a" border="0"></p>
 <h2 align="center">🚀 Blazing fast react Ui library with Hooks 🚀</h2>
 
 <h3 align="center">Status Badges</h3>
