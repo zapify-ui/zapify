@@ -32,5 +32,5 @@ export default create({
 
   brandTitle: "Zapify-ui",
   brandUrl: "https://zapify.netlify.com",
-  brandImage: "https://i.ibb.co/hdsdzq7/ms-icon-144x144.png"
+  brandImage: "https://lh3.google.com/u/0/d/19wiBbEPkhSiNjDOcIFIqGHEfdeq3Gy1S=w2560-h978-iv1"
 });
