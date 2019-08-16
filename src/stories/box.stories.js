@@ -2,12 +2,10 @@
 
 import React from "react";
 import { storiesOf, addDecorator } from "@storybook/react";
-import { withInfo } from "@storybook/addon-info";
 import Box from "../components/Box";
 import Typography from "../components/Typography";
 
 storiesOf("Box", module)
-  .addDecorator(withInfo)
   .addWithJSX("color primary Text Color black", () => (
     <div>
       <center>
