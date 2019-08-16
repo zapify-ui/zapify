@@ -10,3 +10,5 @@ Dockerfile
 Dockerfile-prod
 docker-compose.yml
 yarn.lock
+dist/
+.out/
