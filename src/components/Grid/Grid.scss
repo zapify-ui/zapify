@@ -13,6 +13,7 @@ $cols: (
   "small": 8
 );
 
+
 // Grid container 
 .grid {
   margin: 0 auto;
@@ -27,7 +28,7 @@ $cols: (
 
   @each $col, $i in $cols {
     &.grid_#{$i} {
-        grid-template-columns: repeat($i, 1fr);
+        //grid-template-columns: repeat($i, 1fr);
 
       .col {
         color: white;
