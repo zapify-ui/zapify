@@ -16,7 +16,7 @@ export const COLORS = {
   white: "#FFFFFF",
   yellow: "#FFCC00",
   darkYellow: "#D8AC21",
-  black: "#000000"
+  black: "rgb(68, 68, 68)"
 };
 
 export const GRADIENTS = {
