@@ -20,7 +20,7 @@ function Box(props) {
     textColor: { textColor }
   };
 
-  return <div className={color} style={_styles} />;
+  return <div className={color} style={_styles}>{props.children}</div>
 }
 
 Box.defaultProps = {

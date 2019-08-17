@@ -19,6 +19,7 @@ $cols: (
   width: $width;
   display: grid;
   grid-gap: 1vw;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
 
   &:not(last-of-type) {
     margin-bottom: 1vw;
@@ -31,11 +32,11 @@ $cols: (
       .col {
         color: white;
         padding: .1vw;
-        background: gray;
+        //background: gray;
         text-align: center;
         font-size: 2vw;
         &:nth-child(even) {
-          background: blueviolet;
+          //background: blueviolet;
         }
         
         @for $col from 1 through $i {
