@@ -1,67 +1,49 @@
-@import "../../styles/ColorSchema.scss";
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+//body { font-family: 'Roboto', sans-serif; margin-bottom: 5em;}
 
-.GridSpacing {
-    align-items: center;
-    display: inline-block;
-}
 
-.GridBox {
-     border: 2px solid black;
-     width: 200px;
-     height: 250px;
-     text-align: center;
-     display: inline-block;
-     background-color: teal;
-     padding: 25px 5px;
-     -webkit-box-shadow: 5px 5px 5px 0px #000000, inset 4px 4px 15px 0px #000000, 5px 5px 15px 5px rgba(0,0,0,0); 
-box-shadow: 5px 5px 5px 0px #000000, inset 4px 4px 15px 0px #000000, 5px 5px 15px 5px rgba(0,0,0,0);
-    //  margin: 10px;
-}
 
-@media
-	  only screen 
-    and (max-width: 760px), (min-device-width: 768px) 
-    and (max-device-width: 1024px)  {
+// Container width
+$width: 100%;
 
-		/* Force table to not be like tables anymore */
-		table, thead, tbody, th, td, tr {
-			display: block;
-		}
+// Array of columns
+$cols: (
+  "wide": 16,
+  "base": 12,
+  "small": 8
+);
 
-		/* Hide table headers (but not display: none;, for accessibility) */
-		thead tr {
-			position: absolute;
-			top: -9999px;
-			left: -9999px;
-		}
+// Grid container 
+.grid {
+  margin: 0 auto;
+  width: $width;
+  display: grid;
+  grid-gap: 1vw;
 
-        // margin between each row
-        tr {
-            margin: 0 0 5rem 0;
-            display: grid;
-            display: table-row;
-            align-content: center;
-            grid-template-columns: 1fr 1fr;
+  &:not(last-of-type) {
+    margin-bottom: 1vw;
+  }
+
+  @each $col, $i in $cols {
+    &.grid_#{$i} {
+        grid-template-columns: repeat($i, 1fr);
+
+      .col {
+        color: white;
+        padding: .1vw;
+        background: gray;
+        text-align: center;
+        font-size: 2vw;
+        &:nth-child(even) {
+          background: blueviolet;
         }
-      
-    
-		td {
-			/* Behave  like a "row" */
-			border: none;
-            position: relative;
-            text-align: center;
-            padding-top: 10px;
-           
-		}
-
-		td:before {
-			/* Now like a table header */
-			position: absolute;
-			/* Top/left values mimic padding */
-			top: 0;
-			left: 6px;
-			width: 50%;
-            padding-right: 10px;
-            white-space: nowrap;
-		}
-	}
+        
+        @for $col from 1 through $i {
+          &.col-#{$col} {
+            grid-column: span #{$col}
+          }
+        }
+      }
+    }
+  }
+}
