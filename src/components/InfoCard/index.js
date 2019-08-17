@@ -10,7 +10,7 @@ import "./InfoCard.css";
 function InfoCard(props) {
     return (
 
-        <div className="icard icard-1" style={{ width: "570px" }} >
+        <div className="icard icard-1">
 
             <h3>Title</h3>
             <p>Sed ut perspiciatis unde omnis iste natus
