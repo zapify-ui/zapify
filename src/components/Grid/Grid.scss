@@ -29,6 +29,7 @@ $cols: (
   @each $col, $i in $cols {
     &.grid_#{$i} {
         //grid-template-columns: repeat($i, 1fr);
+       
 
       .col {
         color: white;
@@ -48,4 +49,44 @@ $cols: (
       }
     }
   }
+}
+
+@media only screen 
+and (min-width : 768px) 
+and (max-width : 1280px) {
+	.grid {
+  margin: 0 auto;
+  width: $width;
+  display: grid;
+  grid-gap: 1vw;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+
+  &:not(last-of-type) {
+    margin-bottom: 1vw;
+  }
+
+  @each $col, $i in $cols {
+    &.grid_#{$i} {
+        grid-template-columns: repeat($i, 1fr);
+
+      .col {
+        color: white;
+        padding: .1vw;
+        //background: gray;
+        text-align: center;
+        font-size: 2vw;
+        &:nth-child(even) {
+          //background: blueviolet;
+        }
+        
+        @for $col from 1 through $i {
+          &.col-#{$col} {
+            grid-column: span #{$col}
+          }
+        }
+      }
+    }
+  }
+}
+
 }
