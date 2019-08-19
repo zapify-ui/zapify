@@ -3,5 +3,10 @@
 import React from "react";
 import { storiesOf } from "@storybook/react";
 import Colors from "../components/Colors";
+import { Typography } from "../components";
 
-storiesOf("Colors", module).addWithJSX("Pallete", () => <Colors />);
+storiesOf("Colors", module).addWithJSX("Color and Gradient Pallete", () => (
+  <div>
+    <Typography variant="h1">Colors</Typography> <Colors />
+  </div>
+));
