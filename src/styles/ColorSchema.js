@@ -1,4 +1,6 @@
 export const COLORS = {
+  primary: "#967adc",
+  lavendar: "#967adc",
   blue: "#1BADF8",
   darkBlue: "#2B7DE5",
   grey: "#A9A9A9",
