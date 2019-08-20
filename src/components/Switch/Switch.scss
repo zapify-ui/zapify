@@ -1,28 +1,4 @@
-html,
-body {
-  height: 100%;
-}
-
-body {
-  background: #333;
-  font-family: Helvetica Neue;
-}
-
-.storybook {
-  width: 100%;
-  color: #708090;
-  height: 100%;
-
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-flow: column;
-  text-align: center;
-}
-
-#storybook {
-  display: block;
-}
+@import "../../styles/ColorSchema.scss";
 
 .ToggleSwitch {
   position: relative;
@@ -33,9 +9,8 @@ body {
   &.ToggleSwitch__rounded {
     .Slider {
       border-radius: 15rem;
-      background: #eceff1;
-      border: 1px solid #a0a0a0;
-
+      background: $white;
+      border: 1px solid $gray;
       &:before {
         border-radius: 50%;
       }
@@ -46,7 +21,6 @@ body {
     position: relative;
     width: 5rem;
     height: 2.35rem;
-
     .Slider {
       position: absolute;
       cursor: pointer;
@@ -55,12 +29,11 @@ body {
       right: 0;
       bottom: 0;
       transition: 0.4s ease;
-
       &:before {
         width: 2.45rem;
         height: 2.45rem;
         position: absolute;
-        background: #fff;
+        background: $white;
         content: "";
         margin: 0;
         padding: 0;
@@ -73,11 +46,11 @@ body {
       }
 
       &.isChecked {
-        background: #fff;
+        background: $white;
 
         &:before {
           left: calc(100% - 0.1rem - 2.45rem);
-          background: #0099ff;
+          background: $primary;
         }
       }
     }
