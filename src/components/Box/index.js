@@ -6,6 +6,7 @@
 /* eslint-disable react/prefer-stateless-function */
 import Proptypes from "prop-types";
 import React from "react";
+import { COLORS } from "../../styles/ColorSchema";
 import "./Box.css";
 
 function Box(props) {
@@ -28,7 +29,7 @@ function Box(props) {
 }
 
 Box.defaultProps = {
-  color: "black",
+  color: COLORS.primary,
   textColor: "white",
   p: "2em",
   m: "2.5em"
