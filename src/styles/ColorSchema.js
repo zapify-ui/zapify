@@ -1,22 +1,16 @@
 export const COLORS = {
-  blue: "#1BADF8",
-  darkBlue: "#2B7DE5",
-  grey: "#A9A9A9",
-  darkGrey: "#6C6C6C",
-  green: "#63DA38",
-  darkGreen: "#00AB21",
-  orange: "#FF9500",
-  darkOrange: "#D75F00",
-  pink: "#FF2968",
-  darkPink: "#99195E",
-  purple: "#CC73E1",
-  darkPurple: "#7C1FA1",
-  red: "#FF3B30",
-  darkRed: "#C22518",
-  white: "#FFFFFF",
-  yellow: "#FFCC00",
-  darkYellow: "#D8AC21",
-  black: "#000000"
+  primary: "#967adc",
+  lavendar: "#967adc",
+  blue: "#4a89dc",
+  gray: "#656d78",
+  green: "#8cc152",
+  orange: "#f6bb42",
+  pink: "#d770ad",
+  purple: "#967adc",
+  red: "#da4453",
+  yellow: "#ffce54",
+  white: "#ccd1d9",
+  black: "#434a54"
 };
 
 export const GRADIENTS = {

@@ -37,7 +37,7 @@ storiesOf("Grid", module)
     <div>
       <Grid type="grid grid_12">{calculategrid(12, "01", "col col-1")}</Grid>
       <Grid type="grid grid_12">{calculategrid(6, "02", "col col-2")}</Grid>
-      <Grid type="grid grid_12">{calculategrid(3, "03", "col col-3")}</Grid>
+      <Grid type="grid grid_12">{calculategrid(4, "03", "col col-3")}</Grid>
 
       <Grid type="grid grid_12">{calculategrid(2, "06", "col col-6")}</Grid>
       <Grid type="grid grid_12">{calculategrid(1, "12", "col col-12")}</Grid>
