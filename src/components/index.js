@@ -10,3 +10,4 @@ export { default as Switch } from "./Switch";
 export { default as ZapBar } from "./ZapBar";
 export { default as Card1 } from "./Card1";
 export { default as Colors } from "./Colors";
+export { default as ZapButton } from "./ZapButton";
