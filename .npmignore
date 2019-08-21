@@ -10,3 +10,4 @@ Dockerfile
 Dockerfile-prod
 docker-compose.yml
 yarn.lock
+storybook-static/*
