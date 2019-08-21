@@ -6,17 +6,11 @@ import Proptypes from "prop-types";
 import "./ZapButton.css";
 
 function ZapButton(props) {
-
-const { color, textColor } = props;
-const _styles = {
-  background: color,
-  color: textColor
-}
-
+const { variant } = props;
 
   return (
     <div>
-      <button style={_styles}>{props.children}</button>
+      <button className={variant}>{props.children}</button>
     </div>
   );
 }
