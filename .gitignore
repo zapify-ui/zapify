@@ -5,3 +5,4 @@ node_modules
 .cache
 src/components/**/*.css
 dist/
+storybook-static/*
