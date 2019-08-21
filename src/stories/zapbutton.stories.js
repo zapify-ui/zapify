@@ -6,6 +6,6 @@ import { action } from "@storybook/addon-actions";
 import ZapButton from "../components/ZapButton";
 
 storiesOf("ZapButton", module)
-.addWithJSX("primary button", () => (
-<ZapButton color="maroon" textColor="white">Zap Button</ZapButton>
+.addWithJSX("This is of variant paperButton", () => (
+<ZapButton variant="paperButton">Zap Button</ZapButton>
 ));
