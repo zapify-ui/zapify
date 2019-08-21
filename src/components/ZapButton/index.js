@@ -3,13 +3,20 @@
 /* eslint-disable react/prefer-stateless-function */
 import React from "react";
 import Proptypes from "prop-types";
- import "./ZapButton.css";
+import "./ZapButton.css";
 
 function ZapButton(props) {
+
+const { color, textColor } = props;
+const _styles = {
+  background: color,
+  color: textColor
+}
+
+
   return (
     <div>
-      {/* <button className={props.color}>{props.children}</button> */}
-      <button className="primary">hello kns</button>
+      <button style={_styles}>{props.children}</button>
     </div>
   );
 }
