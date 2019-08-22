@@ -4,7 +4,7 @@
 .paperButton {
   color: black;
   background-color: white;
-  width: 300px;
+  width: 200px;
   position: relative;
   overflow: hidden;
   transform: translate3d(0, 0, 0);
@@ -50,7 +50,7 @@
 .funkgradientButton5, 
 .funkgradientButton6 {
   color: white;
-  width: 300px;
+  width: 200px;
   position: relative;
   overflow: hidden;
   transform: translate3d(0, 0, 0);
@@ -112,20 +112,28 @@
   background-color: $orange; 
 }
 
+.purpleBorderButton{
+  border: 1px solid $purple;
+  color: $purple;
+}.purpleBorderButton:hover{
+  background-color: $purple; 
+}
 
 .blackBorderButton,
-.orangeBorderButton {
+.orangeBorderButton,
+.purpleBorderButton {
   display: inline-block;
   margin: 0.2rem 0.1rem;
   padding: 0.7rem 1.2rem;
-  width: 300px;
+  width: 200px;
   border-radius: 10px;
   background-color: transparent;
   transition: all ease .3s;
   font-size: 1.1rem;
 }
 .blackBorderButton:hover,
-.orangeBorderButton:hover{
+.orangeBorderButton:hover,
+.purpleBorderButton:hover{
   cursor: pointer;
   color: white;  
 }
