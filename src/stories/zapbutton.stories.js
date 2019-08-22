@@ -23,6 +23,7 @@ storiesOf("ZapButton", module)
             <ZapButton variant="funkgradientButton1">Zap Button</ZapButton>
             <ZapButton variant="funkgradientButton2">Zap Button</ZapButton>
             <ZapButton variant="funkgradientButton3">Zap Button</ZapButton>
+            <ZapButton variant="funkgradientButton4">Zap Button</ZapButton>
     </div>
   ))
 .addWithJSX("This is of variant-> darkgradientButton", () => (
