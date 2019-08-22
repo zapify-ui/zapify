@@ -45,5 +45,6 @@ storiesOf("ZapButton", module)
             <ZapButton variant="purpleBorderButton">Zap Button</ZapButton>
             <ZapButton variant="orangeBorderButton">Zap Button</ZapButton>
             <ZapButton variant="blueBorderButton">Zap Button</ZapButton>
+            <ZapButton variant="yellowBorderButton">Zap Button</ZapButton>
     </div>
   ));

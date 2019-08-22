@@ -126,10 +126,18 @@
   background-color: $blue; 
 }
 
+.yellowBorderButton{
+  border: 1px solid $yellow;
+  color: $yellow;
+}.yellowBorderButton:hover{
+  background-color: $yellow; 
+}
+
 .blackBorderButton,
 .orangeBorderButton,
 .purpleBorderButton,
-.blueBorderButton {
+.blueBorderButton,
+.yellowBorderButton {
   display: inline-block;
   margin: 0.2rem 0.1rem;
   padding: 0.7rem 1.2rem;
@@ -142,7 +150,8 @@
 .blackBorderButton:hover,
 .orangeBorderButton:hover,
 .purpleBorderButton:hover,
-.blueBorderButton:hover{
+.blueBorderButton:hover,
+.yellowBorderButton:hover{
   cursor: pointer;
   color: white;  
 }
