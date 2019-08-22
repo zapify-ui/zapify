@@ -8,9 +8,8 @@ import "./ZapButton.css";
 function ZapButton(props) {
 const { variant } = props;
 const _styles = {
-  margin: "10px"
+  margin: "15px"
 }
-
   return (
     <div>
       <button className={variant} style={_styles}>{props.children}</button>
