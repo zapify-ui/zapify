@@ -1,5 +1,6 @@
 @import "../../styles/ColorSchema.scss";
 
+
 .paperButton {
   color: black;
   background-color: white;
@@ -104,7 +105,16 @@
 }
 
 
-.blackBorderButton {
+.orangeBorderButton{
+  border: 1px solid $orange;
+  color: $orange;
+}.orangeBorderButton:hover{
+  background-color: $orange; 
+}
+
+
+.blackBorderButton,
+.orangeBorderButton {
   display: inline-block;
   margin: 0.2rem 0.1rem;
   padding: 0.7rem 1.2rem;
@@ -114,8 +124,8 @@
   transition: all ease .3s;
   font-size: 1.1rem;
 }
-
-.blackBorderButton:hover{
+.blackBorderButton:hover,
+.orangeBorderButton:hover{
   cursor: pointer;
   color: white;  
 }
