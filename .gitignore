@@ -4,8 +4,4 @@ node_modules
 *.log
 .cache
 src/components/**/*.css
-<<<<<<< HEAD
 dist/*
-=======
-dist/
->>>>>>> 68bb16d347886bf8af1210d698c39cc7cb5c7aad
