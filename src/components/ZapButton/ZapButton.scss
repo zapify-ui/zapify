@@ -1,25 +1,15 @@
 @import "../../styles/ColorSchema.scss";
 
+
 .paperButton {
   color: black;
   background-color: white;
-  width: 300px;
+  width: 200px;
   position: relative;
   overflow: hidden;
   transform: translate3d(0, 0, 0);
-  border-radius: 0px;
-  box-shadow: 0px 10px 10px 0px rgba(230, 240, 236, 0.4);
-}
-
-.darkgradientButton {
-  color: white;
-  background: $dark-gray-grad;
-  width: 300px;
-  position: relative;
-  overflow: hidden;
-  transform: translate3d(0, 0, 0);
-  border-radius: 0px;
-  box-shadow: 0px 10px 10px 0px rgba(240, 241, 241, 0.4);
+  border-radius: 25px 5px;
+  box-shadow: 0px 10px 10px 0px rgba(21, 22, 22, 0.4);
 }
 
 .funkgradientButton1 {
@@ -46,14 +36,26 @@
   background: linear-gradient(-9deg, #ffcc00 50%, #d8ac21 50%);
 }
 
-.funkgradientButton1, .funkgradientButton2, .funkgradientButton3, .funkgradientButton4, .funkgradientButton5, .funkgradientButton6 {
+
+.darkgradientButton {
   color: white;
-  width: 300px;
+  background: $dark-gray-grad;
+}
+
+.darkgradientButton,
+.funkgradientButton1,
+.funkgradientButton2, 
+.funkgradientButton3, 
+.funkgradientButton4, 
+.funkgradientButton5, 
+.funkgradientButton6 {
+  color: white;
+  width: 200px;
   position: relative;
   overflow: hidden;
   transform: translate3d(0, 0, 0);
-  border-radius: 0px;
-  box-shadow: 0px 10px 10px 0px rgba(240, 241, 241, 0.4);
+  border-radius: 25px 5px;
+  box-shadow: 0px 10px 10px 0px rgba(21, 22, 22, 0.4);
 }
 
 .paperButton:after,
@@ -93,3 +95,72 @@
   transition: 0s;
 }
 
+
+
+.blackBorderButton{
+  border: 1px solid #2d3436;
+  color: #2d3436;
+}.blackBorderButton:hover{
+  background-color: #2d3436; 
+}
+
+
+.orangeBorderButton{
+  border: 1px solid $orange;
+  color: $orange;
+}.orangeBorderButton:hover{
+  background-color: $orange; 
+}
+
+.purpleBorderButton{
+  border: 1px solid $purple;
+  color: $purple;
+}.purpleBorderButton:hover{
+  background-color: $purple; 
+}
+
+.blueBorderButton{
+  border: 1px solid $blue;
+  color: $blue;
+}.blueBorderButton:hover{
+  background-color: $blue; 
+}
+
+.yellowBorderButton{
+  border: 1px solid $yellow;
+  color: $yellow;
+}.yellowBorderButton:hover{
+  background-color: $yellow; 
+}
+
+.redBorderButton{
+  border: 1px solid $red;
+  color: $red;
+}.redBorderButton:hover{
+  background-color: $red; 
+}
+
+.blackBorderButton,
+.orangeBorderButton,
+.purpleBorderButton,
+.blueBorderButton,
+.yellowBorderButton,
+.redBorderButton {
+  display: inline-block;
+  margin: 0.2rem 0.1rem;
+  padding: 0.7rem 1.2rem;
+  width: 200px;
+  border-radius: 10px;
+  background-color: transparent;
+  transition: all ease .3s;
+  font-size: 1.1rem;
+}
+.blackBorderButton:hover,
+.orangeBorderButton:hover,
+.purpleBorderButton:hover,
+.blueBorderButton:hover,
+.yellowBorderButton:hover,
+.redBorderButton:hover{
+  cursor: pointer;
+  color: white;  
+}
