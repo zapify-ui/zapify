@@ -119,9 +119,17 @@
   background-color: $purple; 
 }
 
+.blueBorderButton{
+  border: 1px solid $blue;
+  color: $blue;
+}.blueBorderButton:hover{
+  background-color: $blue; 
+}
+
 .blackBorderButton,
 .orangeBorderButton,
-.purpleBorderButton {
+.purpleBorderButton,
+.blueBorderButton {
   display: inline-block;
   margin: 0.2rem 0.1rem;
   padding: 0.7rem 1.2rem;
@@ -133,7 +141,8 @@
 }
 .blackBorderButton:hover,
 .orangeBorderButton:hover,
-.purpleBorderButton:hover{
+.purpleBorderButton:hover,
+.blueBorderButton:hover{
   cursor: pointer;
   color: white;  
 }
