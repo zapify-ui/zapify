@@ -15,7 +15,7 @@ const { variant } = props;
   );
 }
 
-// Button.propType = {
-//   color: Proptypes.string
-// };
+ZapButton.propType = {
+  variant: Proptypes.string
+};
 export default ZapButton;
