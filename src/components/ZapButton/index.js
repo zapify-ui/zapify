@@ -7,10 +7,13 @@ import "./ZapButton.css";
 
 function ZapButton(props) {
 const { variant } = props;
+const _styles = {
+  margin: "10px"
+}
 
   return (
     <div>
-      <button className={variant}>{props.children}</button>
+      <button className={variant} style={_styles}>{props.children}</button>
     </div>
   );
 }
@@ -18,4 +21,8 @@ const { variant } = props;
 ZapButton.propType = {
   variant: Proptypes.string
 };
+
+ZapButton.defaultProps = {
+  variant: "paperButton"
+}
 export default ZapButton;
