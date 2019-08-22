@@ -22,9 +22,32 @@
   box-shadow: 0px 10px 10px 0px rgba(240, 241, 241, 0.4);
 }
 
-.funkgradientButton {
-  color: white;
+.funkgradientButton1 {
   background: linear-gradient(-9deg, #63da38 50%, #00ab21 50%);
+}
+
+.funkgradientButton2 {
+  background: linear-gradient(-9deg, #ff9500 50%, #d75f00 50%);
+}
+
+.funkgradientButton3 {
+  background: linear-gradient(-9deg, #ff2968  50%, #99195e  50%);
+}
+
+.funkgradientButton4 {
+  background: linear-gradient(-9deg, #cc73e1 50%, #7c1fa1 50%);
+}
+
+.funkgradientButton5 {
+  background: linear-gradient(-9deg, #ff3b30 50%, #c22518 50%);
+}
+
+.funkgradientButton6 {
+  background: linear-gradient(-9deg, #ffcc00 50%, #d8ac21 50%);
+}
+
+.funkgradientButton1, .funkgradientButton2, .funkgradientButton3, .funkgradientButton4, .funkgradientButton5, .funkgradientButton6 {
+  color: white;
   width: 300px;
   position: relative;
   overflow: hidden;
@@ -33,7 +56,14 @@
   box-shadow: 0px 10px 10px 0px rgba(240, 241, 241, 0.4);
 }
 
-.paperButton:after, .darkgradientButton:after, .funkgradientButton:after{
+.paperButton:after,
+.darkgradientButton:after, 
+.funkgradientButton1:after, 
+.funkgradientButton2:after,
+.funkgradientButton3:after,
+.funkgradientButton4:after,
+.funkgradientButton5:after,
+.funkgradientButton6:after{
   content: "";
   display: block;
   position: absolute;
@@ -50,7 +80,14 @@
   transition: transform 0.5s, opacity 1s;
 }
 
-.paperButton:active:after, .darkgradientButton:active:after, .funkgradientButton:active:after{
+.paperButton:active:after,
+.darkgradientButton:active:after, 
+.funkgradientButton1:active:after, 
+.funkgradientButton2:active:after,
+.funkgradientButton3:active:after,
+.funkgradientButton4:active:after,
+.funkgradientButton5:active:after,
+.funkgradientButton6:active:after{
   transform: scale(0, 0);
   opacity: 0.3;
   transition: 0s;
