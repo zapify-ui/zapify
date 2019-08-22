@@ -133,11 +133,19 @@
   background-color: $yellow; 
 }
 
+.redBorderButton{
+  border: 1px solid $red;
+  color: $red;
+}.redBorderButton:hover{
+  background-color: $red; 
+}
+
 .blackBorderButton,
 .orangeBorderButton,
 .purpleBorderButton,
 .blueBorderButton,
-.yellowBorderButton {
+.yellowBorderButton,
+.redBorderButton {
   display: inline-block;
   margin: 0.2rem 0.1rem;
   padding: 0.7rem 1.2rem;
@@ -151,7 +159,8 @@
 .orangeBorderButton:hover,
 .purpleBorderButton:hover,
 .blueBorderButton:hover,
-.yellowBorderButton:hover{
+.yellowBorderButton:hover,
+.redBorderButton:hover{
   cursor: pointer;
   color: white;  
 }
