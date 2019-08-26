@@ -8,7 +8,7 @@ import React from "react";
 import "./Card.css";
 import Typography from "../Typography";
 
-function Card1() {
+function Card() {
   return (
     <div className="container">
       <div className="card">
@@ -31,4 +31,4 @@ function Card1() {
   );
 }
 
-export default Card1;
+export default Card;
