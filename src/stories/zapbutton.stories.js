@@ -7,45 +7,45 @@ import ZapButton from "../components/ZapButton";
 import Typography from "../components/Typography";
 
 storiesOf("ZapButton", module)
-.addWithJSX("This is of variant-> paperButton", () => (
-  <div>
-       <center>
-          <Typography>paperButton</Typography>
-       </center>
-          <ZapButton variant="paperButton">Zap Button</ZapButton>
-  </div>
-))
-.addWithJSX("This is of variant-> funkgradientButton<number>", () => (
+  .addWithJSX("This is of variant-> paperButton", () => (
     <div>
-         <center>
-            <Typography>funkgradientButtons</Typography>
-         </center>
-            <ZapButton variant="funkgradientButton1">Zap Button</ZapButton>
-            <ZapButton variant="funkgradientButton2">Zap Button</ZapButton>
-            <ZapButton variant="funkgradientButton3">Zap Button</ZapButton>
-            <ZapButton variant="funkgradientButton4">Zap Button</ZapButton>
-            <ZapButton variant="funkgradientButton5">Zap Button</ZapButton>
-            <ZapButton variant="funkgradientButton6">Zap Button</ZapButton>
+      <center>
+        <Typography>paperButton</Typography>
+      </center>
+      <ZapButton variant="paperButton">Zap Button</ZapButton>
     </div>
   ))
-.addWithJSX("This is of variant-> darkgradientButton", () => (
+  .addWithJSX("This is of variant-> funkgradientButton<number>", () => (
     <div>
-         <center>
-            <Typography>darkgradientButton</Typography>
-         </center>
-            <ZapButton variant="darkgradientButton">Zap Button</ZapButton>
+      <center>
+        <Typography>funkgradientButtons</Typography>
+      </center>
+      <ZapButton variant="funkgradientButton1">Zap Button</ZapButton>
+      <ZapButton variant="funkgradientButton2">Zap Button</ZapButton>
+      <ZapButton variant="funkgradientButton3">Zap Button</ZapButton>
+      <ZapButton variant="funkgradientButton4">Zap Button</ZapButton>
+      <ZapButton variant="funkgradientButton5">Zap Button</ZapButton>
+      <ZapButton variant="funkgradientButton6">Zap Button</ZapButton>
+    </div>
+  ))
+  .addWithJSX("This is of variant-> darkgradientButton", () => (
+    <div>
+      <center>
+        <Typography>darkgradientButton</Typography>
+      </center>
+      <ZapButton variant="darkgradientButton">Zap Button</ZapButton>
     </div>
   ))
   .addWithJSX("This is of variant-> <color>BorderButton", () => (
     <div>
-         <center>
-            <Typography>BorderButtons</Typography>
-         </center>
-            <ZapButton variant="blackBorderButton">Zap Button</ZapButton>
-            <ZapButton variant="purpleBorderButton">Zap Button</ZapButton>
-            <ZapButton variant="orangeBorderButton">Zap Button</ZapButton>
-            <ZapButton variant="blueBorderButton">Zap Button</ZapButton>
-            <ZapButton variant="yellowBorderButton">Zap Button</ZapButton>
-            <ZapButton variant="redBorderButton">Zap Button</ZapButton>
+      <center>
+        <Typography>BorderButtons</Typography>
+      </center>
+      <ZapButton variant="blackBorderButton">Zap Button</ZapButton>
+      <ZapButton variant="purpleBorderButton">Zap Button</ZapButton>
+      <ZapButton variant="orangeBorderButton">Zap Button</ZapButton>
+      <ZapButton variant="blueBorderButton">Zap Button</ZapButton>
+      <ZapButton variant="yellowBorderButton">Zap Button</ZapButton>
+      <ZapButton variant="redBorderButton">Zap Button</ZapButton>
     </div>
   ));

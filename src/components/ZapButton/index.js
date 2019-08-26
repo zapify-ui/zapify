@@ -6,13 +6,15 @@ import Proptypes from "prop-types";
 import "./ZapButton.css";
 
 function ZapButton(props) {
-const { variant } = props;
-const _styles = {
-  margin: "15px"
-}
+  const { variant } = props;
+  const _styles = {
+    margin: "15px"
+  };
   return (
     <div>
-      <button className={variant} style={_styles}>{props.children}</button>
+      <button className={variant} style={_styles}>
+        {props.children}
+      </button>
     </div>
   );
 }
@@ -23,5 +25,5 @@ ZapButton.propType = {
 
 ZapButton.defaultProps = {
   variant: "paperButton"
-}
+};
 export default ZapButton;
