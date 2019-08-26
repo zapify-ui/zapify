@@ -10,7 +10,7 @@
   display: flex;
   justify-content: center;
   text-align: center;
-  min-height: 30px;
+  min-height: 2rem;
 }
 
 // .Card-title {
@@ -19,21 +19,17 @@
 // }
 button {
   width: 80%;
-  height: 50px;
+  height: 3rem;
   border: none;
-  border-radius: 15px;
-  padding: 12px 18px;
-  font-size: 16px;
+  border-radius: 1rem;
+  padding: 1rem 1rem;
+  font-size: 1rem;
   text-transform: uppercase;
   cursor: pointer;
   color: white;
-  background-color: #2597f3;
-  box-shadow: 0 0 4px #999;
+  background-color: $blue;
+  box-shadow: 0 0 4px $gray;
   outline: none;
-}
-.Card-title {
-  width: 75%;
-  background-color: red;
 }
 
 .column p {
@@ -45,12 +41,12 @@ button {
 .Card-detail {
   padding: 16px;
   text-align: center;
-  background-color: #f1f1f1;
+  background-color: $white;
   border-radius: 7%;
   width: 280px;
   height: 360px;
   margin: 50px 80px;
-  box-shadow: 2px 4px 8px 0 rgba(228, 212, 212, 0.5);
+  box-shadow: 2px 4px 8px 0 $gray;
 }
 
 .column {
@@ -99,10 +95,11 @@ button {
   transition: background 0.8s;
 }
 .Card-button:hover {
-  background: #6eb9f7 radial-gradient(circle, transparent 1%, #47a7f5 1%) center/15000%;
+  background: $blue radial-gradient(circle, transparent 1%, #47a7f5 1%)
+    center/15000%;
 }
 .Card-button:active {
-  background-color: #6eb9f7;
+  background-color: $blue;
   background-size: 100%;
   transition: background 0s;
 }
