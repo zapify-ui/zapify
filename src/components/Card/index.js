@@ -6,76 +6,29 @@
 /* eslint-disable react/prefer-stateless-function */
 import React from "react";
 import "./Card.css";
+import Typography from "../Typography";
 
-function Card(props) {
+function Card1() {
   return (
-    <div className="Card">
-      <div className="row">
-        <div className="column">
-          <div className="Card-title">
-            <h1>Title</h1>
-          </div>
-          <div className="Card-detail">
-            <p>
-              Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-              accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
-              quae ab illo inventore veritatis et quasi architecto beatae vitae
-              dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit
-              aspernatur aut odit aut fugit, sed quia consequuntur magni dolores
-              eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam
-              est, qui dolorem ipsum quia dolor sit amet,
-            </p>
-            <button className="Card-button">Click </button>
-          </div>
+    <div className="container">
+      <div className="card">
+        <div className="text">
+          {" "}
+          <Typography color="black" className="text">
+            dsadsadjksabdjhasvdjhsaghjdgyjasgdhjasghdgashdgahsdkasjdlihasukdhskajhdkjsahkjdhsajkd
+          </Typography>
         </div>
-        <div className="column">
-          <div className="Card-detail">
-            <h1>Title</h1>
-            <p>
-              Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-              accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
-              quae ab illo inventore veritatis et quasi architecto beatae vitae
-              dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit
-              aspernatur aut odit aut fugit, sed quia consequuntur magni dolores
-              eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam
-              est, qui dolorem ipsum quia dolor sit amet,
-            </p>
-            <button className="Card-button">Click </button>
-          </div>
-        </div>
-        <div className="column">
-          <div className="Card-detail">
-            <h1>Title</h1>
-            <p>
-              Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-              accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
-              quae ab illo inventore veritatis et quasi architecto beatae vitae
-              dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit
-              aspernatur aut odit aut fugit, sed quia consequuntur magni dolores
-              eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam
-              est, qui dolorem ipsum quia dolor sit amet,
-            </p>
-            <button className="Card-button">Click </button>
-          </div>
-        </div>
-        <div className="column">
-          <div className="Card-detail">
-            <h1>Title</h1>
-            <p>
-              Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-              accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
-              quae ab illo inventore veritatis et quasi architecto beatae vitae
-              dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit
-              aspernatur aut odit aut fugit, sed quia consequuntur magni dolores
-              eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam
-              est, qui dolorem ipsum quia dolor sit amet,
-            </p>
-            <button className="Card-button">Click </button>
-          </div>
-        </div>
+      </div>
+      <div className="title_rectangle">
+        {" "}
+        <div className="Title__text">Hello</div>
+      </div>
+
+      <div className="button">
+        <div className="Button_text">Yaha ayega</div>
       </div>
     </div>
   );
 }
 
-export default Card;
+export default Card1;

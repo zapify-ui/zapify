@@ -1,107 +1,89 @@
 @import "../../styles/ColorSchema.scss";
 
-* {
-  box-sizing: border-box;
-  justify-content: center;
-  text-align: center;
+.container {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 1024px;
+  height: 768px;
+  z-index: 8;
 }
-
-.Card {
-  display: flex;
-  justify-content: center;
+.Button_text {
+  font-size: 12px;
+  font-family: "Open Sans";
+  color: $white;
+  line-height: 1.402;
   text-align: center;
-  min-height: 2rem;
+  position: absolute;
+  padding: 30px;
+  margin-top: -17px;
+  height: 9px;
+  z-index: 7;
 }
-
-// .Card-title {
-//   width: 75%;
-//   background-color: yellow;
-// }
-button {
-  width: 80%;
-  height: 3rem;
-  border: none;
-  border-radius: 1rem;
-  padding: 1rem 1rem;
-  font-size: 1rem;
-  text-transform: uppercase;
-  cursor: pointer;
-  color: white;
+.button {
+  border-width: 0.22px;
+  border-radius: 21px;
+  border-color: $black;
+  border-style: solid;
   background-color: $blue;
-  box-shadow: 0 0 4px $gray;
-  outline: none;
+  position: absolute;
+  left: 570px;
+  top: 537px;
+  width: 134px;
+  height: 41px;
+  z-index: 6;
 }
-
-.column p {
-  min-height: 300px;
-  padding: 0 15px;
+.text {
+  font-size: 12px;
+  font-family: "Open Sans";
+  color: $black;
+  line-height: 1.402;
   text-align: left;
-  margin: 0px;
+  position: absolute;
+  padding: 30px;
+  z-index: 5;
+  width: 200px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
-.Card-detail {
-  padding: 16px;
+.Title__text {
+  font-size: 19px;
+  font-family: "Open Sans";
+  color: $black;
+  line-height: 1.402;
   text-align: center;
-  background-color: $white;
-  border-radius: 7%;
-  width: 280px;
-  height: 360px;
-  margin: 50px 80px;
-  box-shadow: 2px 4px 8px 0 $gray;
+  position: absolute;
+  //   left: 486.445px;
+  //   top: 225.558px;
+  padding: 20px;
+  width: 24px;
+  height: 9px;
+  z-index: 4;
 }
-
-.column {
-  float: left;
-  width: 25%;
-  // height: 700px;
-}
-
-.row {
-  margin: 0 -5px;
-}
-
-/* Clear floats after the columns */
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-/* Responsive columns */
-@media screen and (max-width: 1200px) {
-  .column {
-    width: 33.33%;
-    display: block;
-    margin-bottom: 20px;
-  }
-}
-@media screen and (max-width: 1000px) {
-  .column {
-    width: 50%;
-    display: block;
-    margin-bottom: 20px;
-  }
-}
-
-@media screen and (max-width: 600px) {
-  .column {
-    width: 100%;
-    display: block;
-    margin-bottom: 20px;
-  }
-}
-
-.Card-button {
-  background-position: center;
-  transition: background 0.8s;
-}
-.Card-button:hover {
-  background: $blue radial-gradient(circle, transparent 1%, #47a7f5 1%)
-    center/15000%;
-}
-.Card-button:active {
+.title_rectangle {
+  border-width: 0.22px;
+  border-color: $black;
+  border-style: solid;
+  border-radius: 21px;
   background-color: $blue;
-  background-size: 100%;
-  transition: background 0s;
+  position: absolute;
+  left: 435px;
+  top: 191px;
+  width: 163px;
+  height: 50px;
+  z-index: 3;
 }
-
-/* Button style */
+.card {
+  border-width: 0.22px;
+  border-color: $black;
+  border-style: solid;
+  border-radius: 10px;
+  background-color: $white;
+  position: absolute;
+  left: 435px;
+  top: 216px;
+  width: 269px;
+  height: 341px;
+  z-index: 2;
+}
