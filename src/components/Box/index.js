@@ -10,36 +10,24 @@ import { COLORS } from "../../styles/ColorSchema";
 import "./Box.css";
 
 function Box(props) {
-  const { color, textColor } = props;
-  const boxPadding = `${props.p}em`;
-  const boxMargin = `${props.m}em`;
+  const { color } = props;
+  let _style;
+if (color === "primary"){
+   _style = {backgroundColor: COLORS.primary}
+}
+else {
+  _style = {backgroundColor: COLORS.primary}
+}
 
-  const _styles = {
-    padding: `${boxPadding}`,
-    margin: `${boxMargin}`,
-    color: `${textColor}`,
-    textColor: { textColor }
-  };
-
-  return (
-    <div className={color} style={_styles}>
-      {props.children}
-    </div>
-  );
+  return <div className="box" style={_style} />;
 }
 
 Box.defaultProps = {
-  color: COLORS.primary,
-  textColor: "white",
-  p: "2em",
-  m: "2.5em"
+  color: COLORS.primary
 };
 
 Box.propTypes = {
-  color: Proptypes.string,
-  textColor: Proptypes.string,
-  p: Proptypes.number,
-  m: Proptypes.number
+  color: Proptypes.string
 };
 
 export default Box;
