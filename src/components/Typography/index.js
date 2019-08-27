@@ -53,6 +53,6 @@ Typography.propTypes = {
 Typography.defaultProps = {
   variant: "h5",
   children: "Zapify Ui Text",
-  color: "#fff"
+  color: "#111"
 };
 export default Typography;
