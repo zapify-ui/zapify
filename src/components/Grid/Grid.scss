@@ -20,7 +20,7 @@ $cols: (
   width: $width;
   display: grid;
   grid-gap: 1vw;
-  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(21.875rem, 1fr));
 
   &:not(last-of-type) {
     margin-bottom: 1vw;
@@ -52,14 +52,14 @@ $cols: (
 }
 
 @media only screen 
-and (min-width : 768px) 
-and (max-width : 2560px) {
+and (min-width : 48rem) 
+and (max-width : 160rem) {
 	.grid {
   margin: 0 auto;
   width: $width;
   display: grid;
   grid-gap: 1vw;
-  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(21.875rem, 1fr));
 
   &:not(last-of-type) {
     margin-bottom: 1vw;

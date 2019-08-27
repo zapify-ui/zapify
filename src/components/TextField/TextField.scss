@@ -6,16 +6,16 @@ input {
   -webkit-box-sizing: content-box;
   -moz-box-sizing: content-box;
   box-sizing: content-box;
-  padding: 20px 20px 20px 26px;
-  border: 1px solid;
-  -webkit-border-radius: 3px;
-  border-radius: 3px;
-  font-size: 16px;
+  padding: 1.25rem 1.25rem 1.25rem 1.25rem;
+  border: 0.625rem solid;
+  -webkit-border-radius: 0.19rem;
+  border-radius: 0.19rem;
+  font-size: 1rem;
   -o-text-overflow: clip;
   text-overflow: clip;
   background: rgba(252, 252, 252, 1);
   -webkit-box-shadow: 2px 2px 2px 0 rgba(0, 0, 0, 0.2) inset;
-  box-shadow: 2px 2px 2px 0 rgba(0, 0, 0, 0.2) inset;
+  box-shadow: 0.125rem 0.125rem 0.125rem 0 rgba(0, 0, 0, 0.2) inset;
   outline: none;
 }
 ::placeholder {
@@ -26,8 +26,8 @@ label {
   font-weight: 800;
   text-align: left;
   font-family: $zapFont;
-  font-size: 12.5px;
-  padding-left: 0px;
-  padding-bottom: 2px;
+  font-size: 0.78rem;
+  padding-left: 0rem;
+  padding-bottom: 0.125rem;
   display: block;
 }

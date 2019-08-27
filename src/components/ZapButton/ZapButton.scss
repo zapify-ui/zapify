@@ -4,12 +4,12 @@
 .paperButton {
   color: black;
   background-color: white;
-  width: 200px;
+  width: 12.5rem;
   position: relative;
   overflow: hidden;
   transform: translate3d(0, 0, 0);
-  border-radius: 25px 5px;
-  box-shadow: 0px 10px 10px 0px rgba(21, 22, 22, 0.4);
+  border-radius: 1.56rem 0.3125rem;
+  box-shadow: 0rem 0.625rem 0.625rem 0rem rgba(21, 22, 22, 0.4);
 }
 
 .funkgradientButton1 {
@@ -50,12 +50,12 @@
 .funkgradientButton5, 
 .funkgradientButton6 {
   color: white;
-  width: 200px;
+  width: 12.5rem;
   position: relative;
   overflow: hidden;
   transform: translate3d(0, 0, 0);
-  border-radius: 25px 5px;
-  box-shadow: 0px 10px 10px 0px rgba(21, 22, 22, 0.4);
+  border-radius: 1.5625rem 0.3125rem0;
+  box-shadow: 0rem 0.625rem 0.625rem 0rem rgba(21, 22, 22, 0.4);
 }
 
 .paperButton:after,
@@ -98,7 +98,7 @@
 
 
 .blackBorderButton{
-  border: 1px solid #2d3436;
+  border: 0.06rem solid #2d3436;
   color: #2d3436;
 }.blackBorderButton:hover{
   background-color: #2d3436; 
@@ -106,35 +106,35 @@
 
 
 .orangeBorderButton{
-  border: 1px solid $orange;
+  border: 0.06rem solid $orange;
   color: $orange;
 }.orangeBorderButton:hover{
   background-color: $orange; 
 }
 
 .purpleBorderButton{
-  border: 1px solid $purple;
+  border: 0.06rem solid $purple;
   color: $purple;
 }.purpleBorderButton:hover{
   background-color: $purple; 
 }
 
 .blueBorderButton{
-  border: 1px solid $blue;
+  border: 0.06rem solid $blue;
   color: $blue;
 }.blueBorderButton:hover{
   background-color: $blue; 
 }
 
 .yellowBorderButton{
-  border: 1px solid $yellow;
+  border: 0.06rem solid $yellow;
   color: $yellow;
 }.yellowBorderButton:hover{
   background-color: $yellow; 
 }
 
 .redBorderButton{
-  border: 1px solid $red;
+  border: 0.06rem solid $red;
   color: $red;
 }.redBorderButton:hover{
   background-color: $red; 
@@ -149,8 +149,8 @@
   display: inline-block;
   margin: 0.2rem 0.1rem;
   padding: 0.7rem 1.2rem;
-  width: 200px;
-  border-radius: 10px;
+  width: 12.5rem;
+  border-radius: 0.625rem;
   background-color: transparent;
   transition: all ease .3s;
   font-size: 1.1rem;
