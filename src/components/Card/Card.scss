@@ -1,5 +1,16 @@
 @import "../../styles/ColorSchema.scss";
 
+
+
+@mixin commonproperty{
+  border-width: 0.1rem;
+  border-radius: 2.2rem;
+  border-color: $black;
+  border-style: solid;
+  background-color: $blue;
+  position: absolute;
+}
+
 .container {
   position: absolute;
   left: 0rem;
@@ -21,12 +32,7 @@
   z-index: 7;
 }
 .button {
-  border-width: 0.1rem;
-  border-radius: 2.2rem;
-  border-color: $black;
-  border-style: solid;
-  background-color: $blue;
-  position: absolute;
+  @include commonproperty;
   top: 22rem;
   left: 11.3rem;
   width: 8.4rem;
@@ -58,12 +64,7 @@
   z-index: 4;
 }
 .title_rectangle {
-  border-width: 0.1rem;
-  border-color: $black;
-  border-style: solid;
-  border-radius: 2.2rem;
-  background-color: $blue;
-  position: absolute;
+@include commonproperty
   left: 1rem;
   top: 0.01rem;
   width: 8.4rem;
@@ -71,12 +72,8 @@
   z-index: 3;
 }
 .card {
-  border-width: 0.1rem;
-  border-color: $black;
-  border-style: solid;
-  border-radius: 2.2rem;
-  background-color: $white;
-  position: absolute;
+ @include commonproperty;
+ background-color:white;
   padding: 1rem;
   margin: 1rem;
   width: 17rem;
