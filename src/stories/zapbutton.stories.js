@@ -1,11 +1,27 @@
+/* eslint-disable func-names */
 /* eslint-disable import/no-extraneous-dependencies */
 
 import React from "react";
 import { storiesOf } from "@storybook/react";
-import { action } from "@storybook/addon-actions";
 import ZapButton from "../components/ZapButton";
 import Typography from "../components/Typography";
 
+const borderColors = [
+  "blackBorderButton",
+  "purpleBorderButton",
+  "orangeBorderButton",
+  "blueBorderButton",
+  "yellowBorderButton",
+  "redBorderButton"
+];
+const gradColors = [
+  "funkgradientButton1",
+  "funkgradientButton2",
+  "funkgradientButton3",
+  "funkgradientButton4",
+  "funkgradientButton5",
+  "funkgradientButton6"
+];
 storiesOf("ZapButton", module)
   .addWithJSX("This is of variant-> paperButton", () => (
     <div>
@@ -20,12 +36,9 @@ storiesOf("ZapButton", module)
       <center>
         <Typography>funkgradientButtons</Typography>
       </center>
-      <ZapButton variant="funkgradientButton1">Zap Button</ZapButton>
-      <ZapButton variant="funkgradientButton2">Zap Button</ZapButton>
-      <ZapButton variant="funkgradientButton3">Zap Button</ZapButton>
-      <ZapButton variant="funkgradientButton4">Zap Button</ZapButton>
-      <ZapButton variant="funkgradientButton5">Zap Button</ZapButton>
-      <ZapButton variant="funkgradientButton6">Zap Button</ZapButton>
+      {gradColors.map(function(colors) {
+        return <ZapButton variant={colors}>Zap Button</ZapButton>;
+      })}
     </div>
   ))
   .addWithJSX("This is of variant-> darkgradientButton", () => (
@@ -41,11 +54,8 @@ storiesOf("ZapButton", module)
       <center>
         <Typography>BorderButtons</Typography>
       </center>
-      <ZapButton variant="blackBorderButton">Zap Button</ZapButton>
-      <ZapButton variant="purpleBorderButton">Zap Button</ZapButton>
-      <ZapButton variant="orangeBorderButton">Zap Button</ZapButton>
-      <ZapButton variant="blueBorderButton">Zap Button</ZapButton>
-      <ZapButton variant="yellowBorderButton">Zap Button</ZapButton>
-      <ZapButton variant="redBorderButton">Zap Button</ZapButton>
+      {borderColors.map(function(colors) {
+        return <ZapButton variant={colors}>Zap Button</ZapButton>;
+      })}
     </div>
   ));
