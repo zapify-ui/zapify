@@ -5,7 +5,7 @@ exports[`Container tests 1`] = `
   className="typography"
   style={
     Object {
-      "color": "#fff",
+      "color": "#111",
     }
   }
 >
