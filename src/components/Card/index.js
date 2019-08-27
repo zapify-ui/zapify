@@ -8,27 +8,33 @@ import React from "react";
 import "./Card.css";
 import Typography from "../Typography";
 
-function Card() {
+function Card(props) {
+  const { children, buttonText, titleText } = props;
   return (
     <div className="container">
       <div className="card">
         <div className="text">
           {" "}
           <Typography color="black" className="text">
-            dsadsadjksabdjhasvdjhsaghjdgyjasgdhjasghdgashdgahsdkasjdlihasukdhskajhdkjsahkjdhsajkd
+            {children}
           </Typography>
         </div>
       </div>
       <div className="title_rectangle">
         {" "}
-        <div className="Title__text">Hello</div>
+        <div className="Title__text">{titleText}</div>
       </div>
 
       <div className="button">
-        <div className="Button_text">Yaha ayega</div>
+        <div className="Button_text">{buttonText}</div>
       </div>
     </div>
   );
 }
+Card.defaultProps = {
+  buttonText: "Done",
+  titleText: "ZapCard",
+  children: "Contents"
+};
 
 export default Card;
