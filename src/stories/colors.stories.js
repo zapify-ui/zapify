@@ -7,6 +7,9 @@ import { Typography } from "../components";
 
 storiesOf("Colors", module).addWithJSX("Color and Gradient Pallete", () => (
   <div>
-    <Typography variant="h1">Colors</Typography> <Colors />
+    <Typography variant="h1" color="black">
+      Colors
+    </Typography>{" "}
+    <Colors />
   </div>
 ));
