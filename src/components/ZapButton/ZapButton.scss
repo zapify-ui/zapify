@@ -4,45 +4,49 @@
 .paperButton {
   color: black;
   background-color: white;
-  width: 12.5rem;
+  width: 13rem;
+  height: 2.5rem;
   position: relative;
   overflow: hidden;
+  outline:none;
+  border: 1px solid white;
   transform: translate3d(0, 0, 0);
-  border-radius: 1.56rem 0.3125rem;
   box-shadow: 0rem 0.625rem 0.625rem 0rem rgba(21, 22, 22, 0.4);
 }
 
 .funkgradientButton1 {
-  background: linear-gradient(-9deg, #63da38 50%, #00ab21 50%);
+  background: $blue-grad;
+  border: 1px solid $blue;
 }
 
 .funkgradientButton2 {
-  background: linear-gradient(-9deg, #ff9500 50%, #d75f00 50%);
+  background: $dark-gray-grad;
+  border: 1px solid $black;
 }
 
 .funkgradientButton3 {
-  background: linear-gradient(-9deg, #ff2968  50%, #99195e  50%);
+  background: $green-grad;
+  border: 1px solid $green;
 }
 
 .funkgradientButton4 {
-  background: linear-gradient(-9deg, #cc73e1 50%, #7c1fa1 50%);
+  background: $orange-grad;
+  border: 1px solid $orange;
 }
 
 .funkgradientButton5 {
-  background: linear-gradient(-9deg, #ff3b30 50%, #c22518 50%);
+  background: $purple-grad;
+  border: 1px solid $purple;
 }
 
 .funkgradientButton6 {
-  background: linear-gradient(-9deg, #ffcc00 50%, #d8ac21 50%);
+  background: $red-grad;
+  border: 1px solid $red;
 }
 
 
-.darkgradientButton {
-  color: white;
-  background: $dark-gray-grad;
-}
 
-.darkgradientButton,
+
 .funkgradientButton1,
 .funkgradientButton2, 
 .funkgradientButton3, 
@@ -50,16 +54,16 @@
 .funkgradientButton5, 
 .funkgradientButton6 {
   color: white;
-  width: 12.5rem;
+  width: 13rem;
+  height: 2.5rem;
+  outline: none;
   position: relative;
   overflow: hidden;
   transform: translate3d(0, 0, 0);
-  border-radius: 1.5625rem 0.3125rem0;
   box-shadow: 0rem 0.625rem 0.625rem 0rem rgba(21, 22, 22, 0.4);
 }
 
 .paperButton:after,
-.darkgradientButton:after, 
 .funkgradientButton1:after, 
 .funkgradientButton2:after,
 .funkgradientButton3:after,
@@ -83,7 +87,6 @@
 }
 
 .paperButton:active:after,
-.darkgradientButton:active:after, 
 .funkgradientButton1:active:after, 
 .funkgradientButton2:active:after,
 .funkgradientButton3:active:after,
