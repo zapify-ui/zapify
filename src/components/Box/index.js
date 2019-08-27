@@ -4,20 +4,19 @@
 /* eslint-disable react/destructuring-assignment */
 /* eslint-disable react/button-has-type */
 /* eslint-disable react/prefer-stateless-function */
-import Proptypes from "prop-types";
 import React from "react";
+import Proptypes from "prop-types";
 import { COLORS } from "../../styles/ColorSchema";
 import "./Box.css";
 
 function Box(props) {
   const { color } = props;
   let _style;
-if (color === "primary"){
-   _style = {backgroundColor: COLORS.primary}
-}
-else {
-  _style = {backgroundColor: COLORS.primary}
-}
+  if (color === "primary") {
+    _style = { backgroundColor: COLORS.primary };
+  } else {
+    _style = { backgroundColor: COLORS.primary };
+  }
 
   return <div className="box" style={_style} />;
 }

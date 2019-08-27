@@ -5,8 +5,9 @@
 /* eslint-disable react/button-has-type */
 /* eslint-disable react/prefer-stateless-function */
 import React from "react";
-import "./Card.css";
+import Proptypes from "prop-types";
 import Typography from "../Typography";
+import "./Card.css";
 
 function Card(props) {
   const { children, buttonText, titleText } = props;
@@ -37,4 +38,9 @@ Card.defaultProps = {
   children: "Contents"
 };
 
+Card.propTypes = {
+  buttonText: Proptypes.string,
+  titleText: Proptypes.string,
+  children: Proptypes.string
+};
 export default Card;
