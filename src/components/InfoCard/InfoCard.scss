@@ -1,17 +1,26 @@
+@mixin commonprop{
+  background-repeat: no-repeat;
+    background-position: right;
+    background-size: 5rem;
+    display:inline-block;
+}
+
+
 
 .icard{
-    width: 100%;
-    border-radius: 4px;
+    display:inline-block;
+    width: 80%;
+    border-radius: 0.25rem;
     background: #fff;
-    box-shadow: 0 6px 10px rgba(0,0,0,.08), 0 0 6px rgba(0,0,0,.05);
+    box-shadow: 0 0.375rem 0.625rem rgba(0,0,0,.08), 0 0 0.375rem rgba(0,0,0,.05);
     transition: .3s transform cubic-bezier(.155,1.105,.295,1.12),.3s box-shadow,.3s -webkit-transform cubic-bezier(.155,1.105,.295,1.12);
-  padding: 14px 80px 18px 36px;
+  padding: 0.875rem 5rem 1.125rem 2.25rem;
   cursor: pointer;
 }
 
 .icard:hover{
      transform: scale(1.05);
-  box-shadow: 0 10px 20px rgba(0,0,0,.12), 0 4px 8px rgba(0,0,0,.06);
+  box-shadow: 0 0.625rem 1.25rem rgba(0,0,0,.12), 0 0.25rem 0.5rem rgba(0,0,0,.06);
 }
 
 .icard h3{
@@ -25,36 +34,30 @@
 
 .icard img{
   position: absolute;
-  top: 20px;
-  right: 15px;
-  max-height: 120px;
+  top: 1.25rem;
+  right: 0.94rem;
+  max-height: 7.5rem;
 }
 
 
 
 .icard-1{
   background-image: url(https://ionicframework.com/img/getting-started/ionic-native-card.png);
-      background-repeat: no-repeat;
-    background-position: right;
-    background-size: 80px;
+     @include commonprop;
 }
 
 .icard-2{
    background-image: url(https://ionicframework.com/img/getting-started/components-card.png);
-      background-repeat: no-repeat;
-    background-position: right;
-    background-size: 80px;
+     @include commonprop;
 }
 
 .icard-3{
    background-image: url(https://ionicframework.com/img/getting-started/theming-card.png);
-      background-repeat: no-repeat;
-    background-position: right;
-    background-size: 80px;
+      @include commonprop;
 }
 
-@media(max-width: 990px){
+@media(max-width: 61.87rem){
   .icard{
-    margin: 20px;
+    margin: 1.25rem;
   }
 } 
