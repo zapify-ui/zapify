@@ -22,7 +22,6 @@
     "zapify-ui"
   ],
   "scripts": {
-    "build": "webpack --mode production",
     "test": "jest",
     "build-css": "node-sass-chokidar src/components/ -o src/components/",
     "dev": "webpack --mode development --env.dist=false",
