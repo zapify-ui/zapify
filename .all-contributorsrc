@@ -5,6 +5,15 @@
   "imageSize": 100,
   "commit": false,
   "contributors": [
+   {
+      "login": "piyush97",
+      "name": "Piyush Mehta",
+      "avatar_url": "https://avatars3.githubusercontent.com/u/18229627?s=460&v=4",
+      "profile": "https://github.com/piyush97",
+      "contributions": [
+        "code"
+      ]
+    },
     {
       "login": "is124",
       "name": "Tilak",
@@ -31,6 +40,15 @@
       "profile": "https://github.com/sawood14012",
       "contributions": [
         "userTesting"
+      ]
+    },
+    {
+      "login": "harshraj24",
+      "name": "harshraj24",
+      "avatar_url": "https://avatars0.githubusercontent.com/u/54536823?v=4",
+      "profile": "https://github.com/harshraj24",
+      "contributions": [
+        "design"
       ]
     }
   ],
