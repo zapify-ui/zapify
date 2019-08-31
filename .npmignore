@@ -1,15 +1,1 @@
-.babelrc
-src
-CODE_OF_CONDUCT.md
-.storybook
-.cache
-stories
-.netlify
-.github
-Dockerfile
-Dockerfile-prod
-docker-compose.yml
-yarn.lock
-dist/
-.out/
-storybook-static/*
+
