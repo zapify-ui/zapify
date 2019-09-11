@@ -21,7 +21,7 @@ Pick an issue and leave a comment that you would like to grab it. After the issu
 1. Fork the repository on GitHub
 2. Clone your forked repository to your machine:
 `git clone https://github.com/zapify-ui/zapify.git`
-3. Change directory to the cloned repository: `cd zapify-ui`
+3. Change directory to the cloned repository: `cd zapify`
 4. Add a remote: `git remote add upstream https://github.com/zapify-ui/zapify.git`
 5. Create a branch for your patch: `git checkout -b issue-branch-name`
 6. Install dependencies by running `npm install`
