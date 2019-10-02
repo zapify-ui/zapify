@@ -18,7 +18,7 @@ deploy:
   skip-cleanup: true
   github-token: $github_token
   local_dir: storybook-static
-  repo: zapify-ui/zapify
+  repo: arnabk/zapify
   target_branch: gh-pages
   on:
     branch: master
