@@ -29,7 +29,7 @@
     "dev:dist": "webpack --mode development",
     "lint": "eslint src/**; exit 0",
     "build-storybook": "build-storybook -c src/.storybook",
-    "deploy-storybook": "storybook-to-ghpages -s build-storybook --ci -o storybook-static",
+    "deploy-storybook": "storybook-to-ghpages",
     "lint:watch": "esw -w lib/**",
     "lint-staged": {
       "*.{js,jsx}": [

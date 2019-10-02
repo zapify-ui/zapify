@@ -12,6 +12,7 @@ script:
 - npm run build
 - ./node_modules/.bin/codecov --token="fb6b058a-5c4f-40c9-a5ff-d351fda90dd0"    
 after_success:
+  - npm run build-storybook
   - bash <(curl -s https://codecov.io/bash) -e TRAVIS_NODE_VERSION
 deploy:
 - provider: pages
