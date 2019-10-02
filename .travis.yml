@@ -19,13 +19,19 @@ deploy:
   skip-cleanup: true
   github-token: $github_token
   local_dir: storybook-static
-  repo: arnabk/zapify
+  repo: zapify-ui/zapify
   target_branch: gh-pages
   on:
     branch: master
 
 - provider: npm
   email: me@piyushmehta.com
+  api_key:		
+    secure: TbQLAlf1zh5NKLym+JxRi1XUnR7LtnISOsOfxxPdJTORaH/DUMywuNl4XHIMvLln0Fk/oRtJCBl2afBuASGbVPTGlDfbj3ytwRHcLmPFRpSJ96gpShBLa3YVhnOre7EUpjoBpCA7iF+jfEEjXI4T/AdbRbmiwHMRcIHQcCSy4OeuL9EfWRM9BtPD2zRku/i2p7zD+N0zOvxYgMJErK3JfdxZQTsGI959irUpy6LeEDNH6Id+oEMriaDhrcryOYBWhpJgvr4jE55UiEcRKECfjrDPDzP7CFI8GgVhB6yBPC9xn1WlqyfCw/GF6IHEdQakLbfCSHl521dSbS/WkBccpK1MYFqaUBPJzF5fspMF3isDs5tSCmSRVVkIWfl5jGnDfWHeNpO0TQfqNzxt+qA5WYXh6eaIfZN7BAPx/aMr6gM837R8GTGE4zBRy4NROUgYp1fLByowZfjw/V198yLIi5cyFfM0FJt+bzwW7aG08WBBiEsa3Dnrn8cG9YcW5zJEAiC0mJ8WJHCrQ+7+Q3meI7Kh3KDXc69tnaWqpqHdSxmRf0XAyAL7QY7O67/MDoZmLDY42+4OVJtoh3CnrhkifmzdudIE3zPqHHUDO2eBRpgvu4xY76j+m6feRe1QzbnTtzRGm6xi6Gd5BoE8Ja0IGjb89a6bL1RjnrDLBfm5oaM=
   on:
     repo: zapify-ui/zapify
     branch: master
+  notifications:		
+    slack:		
+      secure: v+Z8pMUbHHhgpJh7ajaJTW6Cw38lYC33mqR+7HdwB9PN+gtuE7rtqxlWoGjuFGIjzeETw3xNDgXYd9Pzy1ybG5d3/8vMyuyEj8Kxl7YlRAC3Az1k7GjUiMnHvZ2gKE2j8M6DQRB+FpqZWEdW7XEi2i03oPHUg3mLDmgIRvSJRTcv8xHozdGjdkXrowXHYQgNRqfHRkmGX7CccptAyOvVQVorkrOWvUhnYdKmYnzKQIvDzQFZmlnJ1IReZZTBMihYq1uASkvLUgD+6RWE0uv2HtEy9JHH4KldRAA9HMO0cZJpNUEikgtQ0mIpD9suna5hKM5+YFH54EeCIo4wwZ3Xtz1zyhBQZPwWZ3JRu8fsqhxywK6nGPqt/X82s3+W2Ua5SB69wUmV/Frai5uAZ4mXplpqmhGcp4SyRvBhLj58JKbedeoNwRATz/C4vNb6Ir1VW3Jo15Aul9o5CTf/Wj0RpjptjWCbC65Cw152KCG6Pp3KnaQlnqHkEVZZTUD/9D1u5n60iMs5bZoeG/J3BL0pvuufdKYjPH8UxhmBX23Eq/HhkXkVis7ttGQQue3UXujfsF9L6edfUIieaP8f5fO5QmUzaTgSqJijDBRBJZ0jlCbUL4WBqexI5N6Da5WD82InFYxxG8g8VK1DV8iRaR2r1CeRAlWjOy9gD6YeQg6jt5M=
+      
