@@ -6,6 +6,7 @@ install:
 cache:
   directories:
   - node_modules
+  - storybook-static
 script:
 - npm run test
 - npm run build
