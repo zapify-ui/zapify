@@ -68,7 +68,6 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
     <td align="center"><a href="https://github.com/is124"><img src="https://avatars2.githubusercontent.com/u/51227848?v=4" width="100px;" alt="Tilak"/><br /><sub><b>Tilak</b></sub></a><br /><a href="https://github.com/zapify-ui/zapify/commits?author=is124" title="Code">💻</a> <a href="#design-is124" title="Design">🎨</a></td>
     <td align="center"><a href="https://github.com/vinaybiradar1717"><img src="https://avatars2.githubusercontent.com/u/46494289?v=4" width="100px;" alt="Vinay Biradar"/><br /><sub><b>Vinay Biradar</b></sub></a><br /><a href="https://github.com/zapify-ui/zapify/commits?author=vinaybiradar1717" title="Code">💻</a></td>
     <td align="center"><a href="https://github.com/sawood14012"><img src="https://avatars1.githubusercontent.com/u/18240985?v=4" width="100px;" alt="Meer Sawood"/><br /><sub><b>Meer Sawood</b></sub></a><br /><a href="#userTesting-sawood14012" title="User Testing">📓</a></td>
-    <td align="center"><a href="https://github.com/harshraj24"><img src="https://avatars0.githubusercontent.com/u/54536823?v=4" width="100px;" alt="harshraj24"/><br /><sub><b>harshraj24</b></sub></a><br /><a href="#design-harshraj24" title="Design">🎨</a></td>
   </tr>
 </table>
 
